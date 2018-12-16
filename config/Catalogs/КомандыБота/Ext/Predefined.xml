@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="04434e0d-482a-4328-8a78-a74101d005bd">
+		<Name>PlanBible2017Bot</Name>
+		<Code/>
+		<Description>Plan bible 2017  bot</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="d7f4fe1c-cc7b-4be5-8af6-a366b9b227a0">
+				<Name>ПланСтарт</Name>
+				<Code/>
+				<Description>start</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="5203323f-f6a2-4890-a6f7-2a1a76ad22d3">
+		<Name>КлёвыйBot</Name>
+		<Code/>
+		<Description>Клёвый bot</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="4ff51e0b-4e4c-4062-a592-a49f7f6da8e6">
+				<Name>КлёвыйComment</Name>
+				<Code/>
+				<Description>comment</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="feecabe7-72dc-47e3-ac24-9609d18d6f07">
+				<Name>КлёвыйHelp</Name>
+				<Code/>
+				<Description>help</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="7d515feb-239f-43a8-a263-fe34099eac4f">
+				<Name>КлёвыйStart</Name>
+				<Code/>
+				<Description>start</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

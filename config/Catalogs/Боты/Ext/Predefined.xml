@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="37886643-a2d0-4364-ba52-0c2604a6b635">
+		<Name>bogblagodat_infobot</Name>
+		<Code>@bogblagodat_infobot</Code>
+		<Description>Bogblagodat info bot</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="99a3e36d-e83d-4107-b9dd-0b8b82ba978f">
+		<Name>КлёвыйBot</Name>
+		<Code>@CewlBot</Code>
+		<Description>Cewl bot</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a1d888e8-147a-4e55-aeac-20e99e88976a">
+		<Name>EstelUAbot</Name>
+		<Code>@EstelUAbot</Code>
+		<Description>Estel UA bot</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5102e22d-ebe4-4c5d-9724-377e3fc22e40">
+		<Name>PlanBible2017Bot</Name>
+		<Code>@PlanBible2017Bot</Code>
+		<Description>Plan bible2017 bot</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

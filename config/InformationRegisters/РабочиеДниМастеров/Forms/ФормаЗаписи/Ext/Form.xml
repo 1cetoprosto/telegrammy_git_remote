@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Мастер" id="1">
+			<DataPath>Запись.Мастер</DataPath>
+			<ContextMenu name="МастерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="МастерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="ГруппаНеделяДата" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа неделя дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа неделя дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНеделяДатаРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<InputField name="НомерНедели" id="4">
+					<DataPath>Запись.НомерНедели</DataPath>
+					<ContextMenu name="НомерНеделиКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НомерНеделиРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="ДатаВремяЗаписи" id="15">
+					<DataPath>Запись.ДатаВремяЗаписи</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата/время записи</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаВремяЗаписиКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ДатаВремяЗаписиРасширеннаяПодсказка" id="17"/>
+					<Events>
+						<Event name="OnChange">ДатаВремяЗаписиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="Рабочий" id="10">
+					<DataPath>Запись.Рабочий</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<CheckBoxType>Tumbler</CheckBoxType>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ=Выходной; БИ=Рабочий</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="РабочийКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="РабочийРасширеннаяПодсказка" id="12"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.РабочиеДниМастеров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
