@@ -104,11 +104,11 @@ InformationRegisters\ЗапросыБоту\Ext\ManagerModule.bsl-->InformationR
 InformationRegisters\ЗапросыБоту\Forms\ФормаСписка.xml-->InformationRegisters\ЗапросыБоту\Forms\ФормаСписка.xml
 InformationRegisters\ЗапросыБоту\Forms\ФормаСписка\Ext\Form.xml-->InformationRegisters\ЗапросыБоту\Forms\ФормаСписка\Ext\Form.xml
 InformationRegisters\ЗапросыБоту\Forms\ФормаСписка\Ext\Form\Module.bsl-->InformationRegisters\ЗапросыБоту\Forms\ФормаСписка\Ext\Form\Module.bsl
-InformationRegisters\РабочиеДниМастеров\Forms\ФормаДляМастера.xml-->InformationRegisters\РабочиеДниМастеров\Forms\ФормаДляМастера.xml
+InformationRegisters\РабочиеДниМастеров\Forms\ФормаВыбораВремени.xml-->InformationRegisters\РабочиеДниМастеров\Forms\ФормаВыбораВремени.xml
 InformationRegisters\РабочиеДниМастеров\Forms\ФормаЗаписи.xml-->InformationRegisters\РабочиеДниМастеров\Forms\ФормаЗаписи.xml
 InformationRegisters\РабочиеДниМастеров\Forms\ФормаСписка.xml-->InformationRegisters\РабочиеДниМастеров\Forms\ФормаСписка.xml
-InformationRegisters\РабочиеДниМастеров\Forms\ФормаДляМастера\Ext\Form.xml-->InformationRegisters\РабочиеДниМастеров\Forms\ФормаДляМастера\Ext\Form.xml
-InformationRegisters\РабочиеДниМастеров\Forms\ФормаДляМастера\Ext\Form\Module.bsl-->InformationRegisters\РабочиеДниМастеров\Forms\ФормаДляМастера\Ext\Form\Module.bsl
+InformationRegisters\РабочиеДниМастеров\Forms\ФормаВыбораВремени\Ext\Form.xml-->InformationRegisters\РабочиеДниМастеров\Forms\ФормаВыбораВремени\Ext\Form.xml
+InformationRegisters\РабочиеДниМастеров\Forms\ФормаВыбораВремени\Ext\Form\Module.bsl-->InformationRegisters\РабочиеДниМастеров\Forms\ФормаВыбораВремени\Ext\Form\Module.bsl
 InformationRegisters\РабочиеДниМастеров\Forms\ФормаЗаписи\Ext\Form.xml-->InformationRegisters\РабочиеДниМастеров\Forms\ФормаЗаписи\Ext\Form.xml
 InformationRegisters\РабочиеДниМастеров\Forms\ФормаЗаписи\Ext\Form\Module.bsl-->InformationRegisters\РабочиеДниМастеров\Forms\ФормаЗаписи\Ext\Form\Module.bsl
 InformationRegisters\РабочиеДниМастеров\Forms\ФормаСписка\Ext\Form.xml-->InformationRegisters\РабочиеДниМастеров\Forms\ФормаСписка\Ext\Form.xml

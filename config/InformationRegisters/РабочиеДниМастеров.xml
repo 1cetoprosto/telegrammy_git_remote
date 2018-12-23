@@ -247,7 +247,7 @@
 			</Dimension>
 			<Form>ФормаЗаписи</Form>
 			<Form>ФормаСписка</Form>
-			<Form>ФормаДляМастера</Form>
+			<Form>ФормаВыбораВремени</Form>
 			<Template>КалендарьОформление</Template>
 		</ChildObjects>
 	</InformationRegister>

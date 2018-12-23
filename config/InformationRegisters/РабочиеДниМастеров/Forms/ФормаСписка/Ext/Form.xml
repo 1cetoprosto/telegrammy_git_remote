@@ -1,11 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<LabelDecoration name="Декорация1" id="104">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1. Для установки &lt;b&gt;выходных дней&lt;/&gt;, выбирите их в календаре зажав &lt;b&gt;Ctrl &lt;/&gt;и нажмите кнопку &lt;b&gt;"&lt;/&gt;&lt;b&gt;Записать выходные дни&lt;/&gt;&lt;b&gt;"&lt;/&gt;.
+2. Добавьте &lt;b&gt;время приема&lt;/&gt; в рабочие дни.
+3. Для установки &lt;b&gt;рабочих дней&lt;/&gt;, выбирите их в календаре зажав &lt;b&gt;Ctrl &lt;/&gt;и нажмите кнопку &lt;b&gt;"&lt;/&gt;&lt;b&gt;Записать рабочие дни&lt;/&gt;&lt;b&gt;"&lt;/&gt;.</v8:content>
+				</v8:item>
+			</Title>
+			<BackColor>style:ToolTipBackColor</BackColor>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="105"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="106"/>
+		</LabelDecoration>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
 				<v8:item>
@@ -24,111 +39,126 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДатаКалендаряПолеДатыExtendedTooltip" id="70"/>
 			<ChildItems>
-				<CalendarField name="ДатаКалендаря" id="71">
-					<DataPath>ДатаКалендаря</DataPath>
-					<TitleLocation>None</TitleLocation>
-					<Width>18</Width>
-					<Height>8</Height>
-					<VerticalStretch>false</VerticalStretch>
-					<SelectionMode>Multiple</SelectionMode>
-					<ContextMenu name="ДатаКалендаряКонтекстноеМеню" id="72"/>
-					<ExtendedTooltip name="ДатаКалендаряExtendedTooltip" id="73"/>
-					<Events>
-						<Event name="OnChange">ДатаКалендаряПриИзменении</Event>
-					</Events>
-				</CalendarField>
-				<UsualGroup name="ГруппаКнопки" id="90">
+				<UsualGroup name="ГруппаКалендарь" id="102">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа кнопки</v8:content>
+							<v8:content>Календарь</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа кнопки</v8:content>
+							<v8:content>Выбирите один или несколько дней</v8:content>
 						</v8:item>
 					</ToolTip>
+					<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
 					<Group>Vertical</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="91"/>
+					<ExtendedTooltip name="ГруппаКалендарьРасширеннаяПодсказка" id="103"/>
 					<ChildItems>
-						<Button name="ЗаписатьВыходныеДни" id="92">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ЗаписатьВыходныеДни</CommandName>
-							<ExtendedTooltip name="ЗаписатьВыходныеДниРасширеннаяПодсказка" id="93"/>
-						</Button>
-						<Button name="ЗаписатьРабочиеДни" id="94">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ЗаписатьРабочиеДни</CommandName>
+						<UsualGroup name="ГруппаДни" id="113">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>&lt;&lt; Записать рабочие дни</v8:content>
+									<v8:content>Группа дни</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="ЗаписатьРабочиеДниРасширеннаяПодсказка" id="95"/>
-						</Button>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дни</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДниРасширеннаяПодсказка" id="114"/>
+							<ChildItems>
+								<Button name="ЗаписатьВыходныеДни" id="92">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗаписатьВыходныеДни</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выходной</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗаписатьВыходныеДниРасширеннаяПодсказка" id="93"/>
+								</Button>
+								<LabelDecoration name="ДекорацияРабочий" id="110">
+									<Visible>false</Visible>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Рабочий</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияРабочийКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="ДекорацияРабочийРасширеннаяПодсказка" id="112"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияВыходной" id="107">
+									<Visible>false</Visible>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выходной</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияВыходнойКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="ДекорацияВыходнойРасширеннаяПодсказка" id="109"/>
+								</LabelDecoration>
+								<Button name="ЗаписатьРабочиеДни" id="146">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗаписатьРабочиеДни</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Рабочий</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗаписатьРабочиеДниРасширеннаяПодсказка" id="147"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<CalendarField name="ДатаКалендаря" id="71">
+							<DataPath>ДатаКалендаря</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>1</MaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>1</MaxHeight>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<SelectionMode>Multiple</SelectionMode>
+							<ContextMenu name="ДатаКалендаряКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="ДатаКалендаряExtendedTooltip" id="73"/>
+							<Events>
+								<Event name="OnChange">ДатаКалендаряПриИзменении</Event>
+								<Event name="OnPeriodOutput">ДатаКалендаряПриВыводеПериода</Event>
+							</Events>
+						</CalendarField>
 					</ChildItems>
 				</UsualGroup>
-				<Table name="ВремяЗаписи" id="74">
-					<Representation>List</Representation>
-					<Header>false</Header>
-					<VerticalLines>false</VerticalLines>
-					<DataPath>ВремяЗаписи</DataPath>
-					<RowPictureDataPath>ВремяЗаписи.Picture</RowPictureDataPath>
-					<ContextMenu name="ВремяЗаписиКонтекстноеМеню" id="75"/>
-					<AutoCommandBar name="ВремяЗаписиКоманднаяПанель" id="76">
-						<Autofill>false</Autofill>
-						<ChildItems>
-							<Button name="ВремяЗаписиКнопкаДобавить" id="96">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Item.ВремяЗаписи.StandardCommand.Add</CommandName>
-								<ExtendedTooltip name="ВремяЗаписиКнопкаДобавитьРасширеннаяПодсказка" id="97"/>
-							</Button>
-							<Button name="ВремяЗаписиКнопкаСкопировать" id="98">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Item.ВремяЗаписи.StandardCommand.Copy</CommandName>
-								<ExtendedTooltip name="ВремяЗаписиКнопкаСкопироватьРасширеннаяПодсказка" id="99"/>
-							</Button>
-						</ChildItems>
-					</AutoCommandBar>
-					<ExtendedTooltip name="ВремяЗаписиРасширеннаяПодсказка" id="77"/>
-					<SearchStringAddition name="ВремяЗаписиСтрокаПоиска" id="78">
-						<AdditionSource>
-							<Item>ВремяЗаписи</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ВремяЗаписиСтрокаПоискаКонтекстноеМеню" id="79"/>
-						<ExtendedTooltip name="ВремяЗаписиСтрокаПоискаРасширеннаяПодсказка" id="80"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="ВремяЗаписиСостояниеПросмотра" id="81">
-						<AdditionSource>
-							<Item>ВремяЗаписи</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ВремяЗаписиСостояниеПросмотраКонтекстноеМеню" id="82"/>
-						<ExtendedTooltip name="ВремяЗаписиСостояниеПросмотраРасширеннаяПодсказка" id="83"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="ВремяЗаписиУправлениеПоиском" id="84">
-						<AdditionSource>
-							<Item>ВремяЗаписи</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="ВремяЗаписиУправлениеПоискомКонтекстноеМеню" id="85"/>
-						<ExtendedTooltip name="ВремяЗаписиУправлениеПоискомРасширеннаяПодсказка" id="86"/>
-					</SearchControlAddition>
-					<ChildItems>
-						<InputField name="ВремяЗаписиЗначение" id="87">
-							<DataPath>ВремяЗаписи.Value</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ВремяЗаписиЗначениеКонтекстноеМеню" id="88"/>
-							<ExtendedTooltip name="ВремяЗаписиЗначениеРасширеннаяПодсказка" id="89"/>
-						</InputField>
-					</ChildItems>
-				</Table>
+				<UsualGroup name="ГруппаВремяПриема" id="100">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время приема</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавьте время приема</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаВремяПриемаРасширеннаяПодсказка" id="101"/>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаСписок" id="53">
@@ -149,6 +179,85 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="54"/>
 			<ChildItems>
+				<Table name="СписокЗаписейНаПрием" id="115">
+					<CommandBarLocation>None</CommandBarLocation>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>СписокЗаписейНаПрием</DataPath>
+					<RowPictureDataPath>СписокЗаписейНаПрием.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="СписокЗаписейНаПриемКонтекстноеМеню" id="116"/>
+					<AutoCommandBar name="СписокЗаписейНаПриемКоманднаяПанель" id="117"/>
+					<ExtendedTooltip name="СписокЗаписейНаПриемРасширеннаяПодсказка" id="118"/>
+					<SearchStringAddition name="СписокЗаписейНаПриемСтрокаПоиска" id="119">
+						<AdditionSource>
+							<Item>СписокЗаписейНаПрием</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокЗаписейНаПриемСтрокаПоискаКонтекстноеМеню" id="120"/>
+						<ExtendedTooltip name="СписокЗаписейНаПриемСтрокаПоискаРасширеннаяПодсказка" id="121"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокЗаписейНаПриемСостояниеПросмотра" id="122">
+						<AdditionSource>
+							<Item>СписокЗаписейНаПрием</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокЗаписейНаПриемСостояниеПросмотраКонтекстноеМеню" id="123"/>
+						<ExtendedTooltip name="СписокЗаписейНаПриемСостояниеПросмотраРасширеннаяПодсказка" id="124"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокЗаписейНаПриемУправлениеПоиском" id="125">
+						<AdditionSource>
+							<Item>СписокЗаписейНаПрием</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокЗаписейНаПриемУправлениеПоискомКонтекстноеМеню" id="126"/>
+						<ExtendedTooltip name="СписокЗаписейНаПриемУправлениеПоискомРасширеннаяПодсказка" id="127"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="СписокЗаписейНаПриемДатаВремяЗаписи" id="128">
+							<DataPath>СписокЗаписейНаПрием.ДатаВремяЗаписи</DataPath>
+							<ContextMenu name="СписокЗаписейНаПриемДатаВремяЗаписиКонтекстноеМеню" id="129"/>
+							<ExtendedTooltip name="СписокЗаписейНаПриемДатаВремяЗаписиРасширеннаяПодсказка" id="130"/>
+						</LabelField>
+						<LabelField name="СписокЗаписейНаПриемКонтрагент" id="131">
+							<DataPath>СписокЗаписейНаПрием.Контрагент</DataPath>
+							<ContextMenu name="СписокЗаписейНаПриемКонтрагентКонтекстноеМеню" id="132"/>
+							<ExtendedTooltip name="СписокЗаписейНаПриемКонтрагентРасширеннаяПодсказка" id="133"/>
+						</LabelField>
+						<LabelField name="СписокЗаписейНаПриемМастер" id="134">
+							<DataPath>СписокЗаписейНаПрием.Мастер</DataPath>
+							<ContextMenu name="СписокЗаписейНаПриемМастерКонтекстноеМеню" id="135"/>
+							<ExtendedTooltip name="СписокЗаписейНаПриемМастерРасширеннаяПодсказка" id="136"/>
+						</LabelField>
+						<LabelField name="СписокЗаписейНаПриемНомекнлатура" id="137">
+							<DataPath>СписокЗаписейНаПрием.Номекнлатура</DataPath>
+							<ContextMenu name="СписокЗаписейНаПриемНомекнлатураКонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="СписокЗаписейНаПриемНомекнлатураРасширеннаяПодсказка" id="139"/>
+						</LabelField>
+						<LabelField name="СписокЗаписейНаПриемТипЗаписиНаПрием" id="140">
+							<DataPath>СписокЗаписейНаПрием.ТипЗаписиНаПрием</DataPath>
+							<ContextMenu name="СписокЗаписейНаПриемТипЗаписиНаПриемКонтекстноеМеню" id="141"/>
+							<ExtendedTooltip name="СписокЗаписейНаПриемТипЗаписиНаПриемРасширеннаяПодсказка" id="142"/>
+						</LabelField>
+						<LabelField name="СписокЗаписейНаПриемСтандартнаяКартинка" id="143">
+							<DataPath>СписокЗаписейНаПрием.DefaultPicture</DataPath>
+							<ContextMenu name="СписокЗаписейНаПриемСтандартнаяКартинкаКонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="СписокЗаписейНаПриемСтандартнаяКартинкаРасширеннаяПодсказка" id="145"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
 				<Table name="Список" id="3">
 					<Representation>List</Representation>
 					<CommandBarLocation>None</CommandBarLocation>
@@ -158,7 +267,7 @@
 					<EnableStartDrag>true</EnableStartDrag>
 					<DataPath>Список</DataPath>
 					<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
-					<AutoRefresh>false</AutoRefresh>
+					<AutoRefresh>true</AutoRefresh>
 					<AutoRefreshPeriod>60</AutoRefreshPeriod>
 					<Period>
 						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
@@ -302,21 +411,66 @@
 				<v8:Type>cfg:CatalogRef.Мастера</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ВремяЗаписи" id="5">
+		<Attribute name="ЦветВыходной" id="6">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Время записи</v8:content>
+					<v8:content>Цвет выходной</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>v8:ValueListType</v8:Type>
+				<v8:Type>v8ui:Color</v8:Type>
 			</Type>
-			<Settings xsi:type="v8:TypeDescription">
-				<v8:Type>xs:dateTime</v8:Type>
-				<v8:DateQualifiers>
-					<v8:DateFractions>Time</v8:DateFractions>
-				</v8:DateQualifiers>
+		</Attribute>
+		<Attribute name="ЦветРабочий" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет выходной</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокЗаписейНаПрием" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список записей на прием</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЗаписиНаПрием.Контрагент КАК Контрагент,
+	ЗаписиНаПрием.Номекнлатура КАК Номекнлатура,
+	ЗаписиНаПрием.ДатаВремяЗаписи КАК ДатаВремяЗаписи,
+	ЗаписиНаПрием.ТипЗаписиНаПрием КАК ТипЗаписиНаПрием,
+	ЗаписиНаПрием.Мастер КАК Мастер
+ИЗ
+	РегистрСведений.ЗаписиНаПрием КАК ЗаписиНаПрием</QueryText>
+				<MainTable>InformationRegister.ЗаписиНаПрием</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
 			</Settings>
 		</Attribute>
 	</Attributes>
@@ -351,6 +505,22 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаписатьРабочиеДни</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьПоШагуМастера" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по шагу мастера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по шагу мастера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоШагуМастера</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>

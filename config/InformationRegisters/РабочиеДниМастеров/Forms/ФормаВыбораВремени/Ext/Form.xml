@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ВыбратьИЗакрыть" id="21">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ВыбратьИЗакрыть</CommandName>
+				<ExtendedTooltip name="ВыбратьИЗакрытьРасширеннаяПодсказка" id="22"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ВремяЗаписи" id="1">
+			<Representation>List</Representation>
+			<Header>false</Header>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>ВремяЗаписи</DataPath>
+			<RowPictureDataPath>ВремяЗаписи.Picture</RowPictureDataPath>
+			<ContextMenu name="ВремяЗаписиКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ВремяЗаписиКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ВремяЗаписиКнопкаДобавить" id="23">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ВремяЗаписи.StandardCommand.Add</CommandName>
+						<ExtendedTooltip name="ВремяЗаписиКнопкаДобавитьРасширеннаяПодсказка" id="24"/>
+					</Button>
+					<Button name="ВремяЗаписиКнопкаСкопировать" id="25">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ВремяЗаписи.StandardCommand.Copy</CommandName>
+						<ExtendedTooltip name="ВремяЗаписиКнопкаСкопироватьРасширеннаяПодсказка" id="26"/>
+					</Button>
+					<Button name="ВремяЗаписиЗаполнитьПоШагуМастера" id="27">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьПоШагуМастера</CommandName>
+						<ExtendedTooltip name="ВремяЗаписиЗаполнитьПоШагуМастераРасширеннаяПодсказка" id="28"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ВремяЗаписиРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ВремяЗаписиСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ВремяЗаписи</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВремяЗаписиСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ВремяЗаписиСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВремяЗаписиСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ВремяЗаписи</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВремяЗаписиСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ВремяЗаписиСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВремяЗаписиУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ВремяЗаписи</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВремяЗаписиУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ВремяЗаписиУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ВремяЗаписиЗначение" id="14">
+					<DataPath>ВремяЗаписи.Value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВремяЗаписиЗначениеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ВремяЗаписиЗначениеРасширеннаяПодсказка" id="16"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ВремяЗаписи" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Time</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущийМастер" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий мастер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Мастера</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьИЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Shift+R</Shortcut>
+			<Action>ВыбратьИЗакрыть</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьПоШагуМастера" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по шагу мастера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по шагу мастера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоШагуМастера</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
