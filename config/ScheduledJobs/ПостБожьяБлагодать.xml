@@ -13,8 +13,8 @@
 			<MethodName>CommonModule.Боты.ПостБожьяБлагодать</MethodName>
 			<Description/>
 			<Key/>
-			<Use>true</Use>
-			<Predefined>true</Predefined>
+			<Use>false</Use>
+			<Predefined>false</Predefined>
 			<RestartCountOnFailure>3</RestartCountOnFailure>
 			<RestartIntervalOnFailure>10</RestartIntervalOnFailure>
 		</Properties>
