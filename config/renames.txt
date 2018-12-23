@@ -63,6 +63,7 @@ DataProcessors\TestZakazUslugBot.xml-->DataProcessors\TestZakazUslugBot.xml
 DataProcessors\КлёвыйBot.xml-->DataProcessors\КлёвыйBot.xml
 DataProcessors\Телеграм.xml-->DataProcessors\Телеграм.xml
 DataProcessors\bogblagodat_infoBot\Ext\ObjectModule.bsl-->DataProcessors\bogblagodat_infoBot\Ext\ObjectModule.bsl
+DataProcessors\bogblagodat_infoBot\Templates\Справка.xml-->DataProcessors\bogblagodat_infoBot\Templates\Справка.xml
 DataProcessors\PlanBible2017Bot\Ext\ObjectModule.bsl-->DataProcessors\PlanBible2017Bot\Ext\ObjectModule.bsl
 DataProcessors\PlanBible2017Bot\Templates\Дополнительно.xml-->DataProcessors\PlanBible2017Bot\Templates\Дополнительно.xml
 DataProcessors\PlanBible2017Bot\Templates\Справка.xml-->DataProcessors\PlanBible2017Bot\Templates\Справка.xml
