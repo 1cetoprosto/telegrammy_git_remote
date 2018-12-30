@@ -28,7 +28,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗаписиНаПрием</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Регистратура</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РабочиеДниМастеров</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">e7574778-b5af-40ea-a393-1f5558973e26</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">5a72c19b-1569-4480-8a54-cff3bd8a8c97</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4e0d4256-f496-40ab-99e4-03db01741ad7</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
