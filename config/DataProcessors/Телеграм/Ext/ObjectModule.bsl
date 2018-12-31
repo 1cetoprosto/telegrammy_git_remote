@@ -699,15 +699,27 @@
 КонецФункции
 
 Функция editMessageText(chat_id,
-					message_id,       //
-					inline_message_id,//
-					text,
-					parse_mode = Неопределено,
-					disable_web_page_preview = Неопределено,
-					reply_markup = Неопределено) Экспорт 
+						message_id,       //
+						inline_message_id,//
+						text,
+						parse_mode = Неопределено,
+						disable_web_page_preview = Неопределено,
+						reply_markup = Неопределено) Экспорт 
+	
+	text = КодироватьСтроку(СокрЛП(text),СпособКодированияСтроки.КодировкаURL,КодировкаТекста.UTF8);
 	
 	Ресурс = "bot"+Бот.Токен+"/editMessageText?chat_id="+Формат(chat_id,"ЧГ=")+"&message_id="+Формат(message_id,"ЧГ=")+"&text="+СокрЛП(text);
-	Если НЕ reply_markup = Неопределено Тогда
+	
+	Если ЗначениеЗаполнено(parse_mode) Тогда
+		Ресурс = Ресурс + ?(parse_mode=Перечисления.ВидФорматирования.БезФорматирования,"", "&parse_mode="+parse_mode);
+	КонецЕсли;
+	
+	Если ЗначениеЗаполнено(disable_web_page_preview) Тогда
+		Ресурс = Ресурс + "&disable_web_page_preview=" + disable_web_page_preview;
+	КонецЕсли;
+	
+	Если ЗначениеЗаполнено(reply_markup) Тогда
+		reply_markup = КодироватьСтроку(reply_markup,СпособКодированияСтроки.КодировкаURL,КодировкаТекста.UTF8);
 		Ресурс = Ресурс +"&reply_markup="+reply_markup; 	
 	КонецЕсли;
 	
