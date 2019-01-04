@@ -101,6 +101,8 @@ InformationRegisters\МастераБотов.xml-->InformationRegisters\Мас�
 InformationRegisters\РабочиеДниМастеров.xml-->InformationRegisters\РабочиеДниМастеров.xml
 InformationRegisters\СессииБотов.xml-->InformationRegisters\СессииБотов.xml
 InformationRegisters\СессииКонтрагентов.xml-->InformationRegisters\СессииКонтрагентов.xml
+InformationRegisters\ВариантыОтветов\Forms\ФормаСписка.xml-->InformationRegisters\ВариантыОтветов\Forms\ФормаСписка.xml
+InformationRegisters\ВариантыОтветов\Forms\ФормаСписка\Ext\Form.xml-->InformationRegisters\ВариантыОтветов\Forms\ФормаСписка\Ext\Form.xml
 InformationRegisters\ЗапросыБоту\Ext\ManagerModule.bsl-->InformationRegisters\ЗапросыБоту\Ext\ManagerModule.bsl
 InformationRegisters\ЗапросыБоту\Forms\ФормаСписка.xml-->InformationRegisters\ЗапросыБоту\Forms\ФормаСписка.xml
 InformationRegisters\ЗапросыБоту\Forms\ФормаСписка\Ext\Form.xml-->InformationRegisters\ЗапросыБоту\Forms\ФормаСписка\Ext\Form.xml
