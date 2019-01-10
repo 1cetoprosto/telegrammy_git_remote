@@ -161,6 +161,7 @@
 			<CommonModule>ПолныеПрава</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>ОбработкаТабличныхЧастей</CommonModule>
+			<CommonModule>Локализация</CommonModule>
 			<HTTPService>Webhook</HTTPService>
 			<ScheduledJob>СборщикМусора</ScheduledJob>
 			<ScheduledJob>ПланЧтения</ScheduledJob>

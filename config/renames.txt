@@ -36,6 +36,7 @@ CommonCommands\ВыполнитьЗадания\Ext\CommandModule.bsl-->CommonCo
 CommonCommands\Объявления\Ext\CommandModule.bsl-->CommonCommands\Объявления\Ext\CommandModule.bsl
 CommonModules\Боты.xml-->CommonModules\Боты.xml
 CommonModules\ГлобальныйМодуль.xml-->CommonModules\ГлобальныйМодуль.xml
+CommonModules\Локализация.xml-->CommonModules\Локализация.xml
 CommonModules\ОбработкаТабличныхЧастей.xml-->CommonModules\ОбработкаТабличныхЧастей.xml
 CommonModules\ОбщегоНазначения.xml-->CommonModules\ОбщегоНазначения.xml
 CommonModules\ПолныеПрава.xml-->CommonModules\ПолныеПрава.xml
@@ -43,6 +44,7 @@ CommonModules\ПрисоединенныеФайлы.xml-->CommonModules\При�
 CommonModules\СтроковыеФункцииКлиентСервер.xml-->CommonModules\СтроковыеФункцииКлиентСервер.xml
 CommonModules\Боты\Ext\Module.bsl-->CommonModules\Боты\Ext\Module.bsl
 CommonModules\ГлобальныйМодуль\Ext\Module.bsl-->CommonModules\ГлобальныйМодуль\Ext\Module.bsl
+CommonModules\Локализация\Ext\Module.bsl-->CommonModules\Локализация\Ext\Module.bsl
 CommonModules\ОбработкаТабличныхЧастей\Ext\Module.bsl-->CommonModules\ОбработкаТабличныхЧастей\Ext\Module.bsl
 CommonModules\ОбщегоНазначения\Ext\Module.bsl-->CommonModules\ОбщегоНазначения\Ext\Module.bsl
 CommonModules\ПолныеПрава\Ext\Module.bsl-->CommonModules\ПолныеПрава\Ext\Module.bsl

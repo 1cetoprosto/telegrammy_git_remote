@@ -142,22 +142,101 @@
 						</CalendarField>
 					</ChildItems>
 				</UsualGroup>
-				<UsualGroup name="ГруппаВремяПриема" id="100">
+				<UsualGroup name="ГруппаСправа" id="156">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Время приема</v8:content>
+							<v8:content>Группа справа</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Добавьте время приема</v8:content>
+							<v8:content>Группа справа</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
 					<Group>Vertical</Group>
-					<ExtendedTooltip name="ГруппаВремяПриемаРасширеннаяПодсказка" id="101"/>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСправаРасширеннаяПодсказка" id="157"/>
+					<ChildItems>
+						<UsualGroup name="ПанельНастроек" id="154">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Панель настроек</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Панель настроек</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПанельНастроекРасширеннаяПодсказка" id="155"/>
+							<ChildItems>
+								<RadioButtonField name="ВариантПериода" id="151">
+									<DataPath>ВариантПериода</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Tumbler</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>День</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">День</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Неделя</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Неделя</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Месяц</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Месяц</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВариантПериодаКонтекстноеМеню" id="152"/>
+									<ExtendedTooltip name="ВариантПериодаРасширеннаяПодсказка" id="153"/>
+									<Events>
+										<Event name="OnChange">ВариантПериодаПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+							</ChildItems>
+						</UsualGroup>
+						<PlannerField name="Планировщик" id="148">
+							<DataPath>Планировщик</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ПланировщикКонтекстноеМеню" id="149"/>
+							<ExtendedTooltip name="ПланировщикРасширеннаяПодсказка" id="150"/>
+						</PlannerField>
+					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
@@ -472,6 +551,140 @@
 					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>
 			</Settings>
+		</Attribute>
+		<Attribute name="Планировщик" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Планировщик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:pl="http://v8.1c.ru/8.3/data/planner">pl:Planner</v8:Type>
+			</Type>
+			<Settings xmlns:pl="http://v8.1c.ru/8.3/data/planner" xsi:type="pl:Planner">
+				<pl:item>
+					<pl:value xsi:nil="true"/>
+					<pl:text>Встреча</pl:text>
+					<pl:tooltip/>
+					<pl:begin>2019-01-08T01:00:00</pl:begin>
+					<pl:end>2019-01-08T04:00:00</pl:end>
+					<pl:borderColor>auto</pl:borderColor>
+					<pl:backColor>auto</pl:backColor>
+					<pl:textColor>auto</pl:textColor>
+					<pl:font kind="AutoFont"/>
+					<pl:dimensionValues/>
+					<pl:replacementDate>0001-01-01T00:00:00</pl:replacementDate>
+					<pl:deleted>false</pl:deleted>
+					<pl:id>e79e7ad5-2563-4ed7-bdd5-88669f62b32b</pl:id>
+				</pl:item>
+				<pl:borderColor>auto</pl:borderColor>
+				<pl:backColor>auto</pl:backColor>
+				<pl:textColor>auto</pl:textColor>
+				<pl:lineColor>auto</pl:lineColor>
+				<pl:font kind="AutoFont"/>
+				<pl:beginOfRepresentationPeriod>0001-01-01T00:00:00</pl:beginOfRepresentationPeriod>
+				<pl:endOfRepresentationPeriod>0001-01-01T00:00:00</pl:endOfRepresentationPeriod>
+				<pl:alignElementsOfTimeScale>true</pl:alignElementsOfTimeScale>
+				<pl:displayTimeScaleWrapHeaders>true</pl:displayTimeScaleWrapHeaders>
+				<pl:displayWrapHeaders>true</pl:displayWrapHeaders>
+				<pl:timeScaleWrapHeadersFormat>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>DLF="DD"</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>DLF="DD"</v8:content>
+					</v8:item>
+				</pl:timeScaleWrapHeadersFormat>
+				<pl:periodicVariantUnit>Day</pl:periodicVariantUnit>
+				<pl:periodicVariantRepetition>1</pl:periodicVariantRepetition>
+				<pl:timeScaleWrapBeginIndent>0</pl:timeScaleWrapBeginIndent>
+				<pl:timeScaleWrapEndIndent>0</pl:timeScaleWrapEndIndent>
+				<pl:timeScale>
+					<placement xmlns="http://v8.1c.ru/8.2/data/chart">Left</placement>
+					<level xmlns="http://v8.1c.ru/8.2/data/chart">
+						<measure>Hour</measure>
+						<interval>1</interval>
+						<show>true</show>
+						<line width="1" gap="false">
+							<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+						</line>
+						<scaleColor>auto</scaleColor>
+						<dayFormatRule>MonthDayWeekDay</dayFormatRule>
+						<format>
+							<v8:item>
+								<v8:lang>#</v8:lang>
+								<v8:content>DF="HH:mm"</v8:content>
+							</v8:item>
+						</format>
+						<labels>
+							<ticks>0</ticks>
+						</labels>
+						<backColor>auto</backColor>
+						<textColor>auto</textColor>
+						<showPereodicalLabels>true</showPereodicalLabels>
+					</level>
+					<transparent xmlns="http://v8.1c.ru/8.2/data/chart">false</transparent>
+					<backColor xmlns="http://v8.1c.ru/8.2/data/chart">auto</backColor>
+					<textColor xmlns="http://v8.1c.ru/8.2/data/chart">auto</textColor>
+					<currentLevel xmlns="http://v8.1c.ru/8.2/data/chart">0</currentLevel>
+				</pl:timeScale>
+				<pl:period>
+					<pl:begin>2019-01-10T00:00:00</pl:begin>
+					<pl:end>2019-01-10T23:59:59</pl:end>
+				</pl:period>
+				<pl:displayCurrentDate>true</pl:displayCurrentDate>
+				<pl:itemsTimeRepresentation>BeginTime</pl:itemsTimeRepresentation>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВариантПериода" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант периода</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Варіант періоду</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиОтображения" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки отображения</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПредставлениеПериода" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление периода</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Представлення періоду</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
