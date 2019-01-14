@@ -140,3 +140,4 @@ Subsystems\Регистратура.xml-->Subsystems\Регистратура.xm
 Subsystems\Телеграм.xml-->Subsystems\Телеграм.xml
 Subsystems\УниверсальныеМеханизмы.xml-->Subsystems\УниверсальныеМеханизмы.xml
 Subsystems\Регистратура\Ext\CommandInterface.xml-->Subsystems\Регистратура\Ext\CommandInterface.xml
+Subsystems\Телеграм\Ext\CommandInterface.xml-->Subsystems\Телеграм\Ext\CommandInterface.xml
