@@ -1231,6 +1231,7 @@
 Эмоджи.Вставить("thumbsup", "\uD83D\uDC4D"); 
 Эмоджи.Вставить("smilingface", "\uD83D\uDE03");
 Эмоджи.Вставить("whiteheavycheckmark", "\u2705");
+Эмоджи.Вставить("negative_squared_cross_mark", "\u274E");
 Эмоджи.Вставить("envelope", "\u2709");
 Эмоджи.Вставить("smiling", "\uD83D\uDE0A");
 Эмоджи.Вставить("star", "\u2B50");
