@@ -162,7 +162,10 @@
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>ОбработкаТабличныхЧастей</CommonModule>
 			<CommonModule>Локализация</CommonModule>
+			<CommonModule>Регистратура</CommonModule>
 			<HTTPService>Webhook</HTTPService>
+			<EventSubscription>ПроведениеЗаписьНаПрием</EventSubscription>
+			<EventSubscription>ПодпискаНаСобытие1</EventSubscription>
 			<ScheduledJob>СборщикМусора</ScheduledJob>
 			<ScheduledJob>ПланЧтения</ScheduledJob>
 			<ScheduledJob>ПостБожьяБлагодать</ScheduledJob>
@@ -194,7 +197,6 @@
 			<InformationRegister>СессииБотов</InformationRegister>
 			<InformationRegister>СессииКонтрагентов</InformationRegister>
 			<InformationRegister>ЗаписиНаПрием</InformationRegister>
-			<InformationRegister>МастераБотов</InformationRegister>
 			<InformationRegister>РабочиеДниМастеров</InformationRegister>
 			<InformationRegister>ВариантыОтветов</InformationRegister>
 		</ChildObjects>

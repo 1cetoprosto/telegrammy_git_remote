@@ -17,27 +17,27 @@
 					<v8:content>Группа шапка</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="26"/>
 			<ChildItems>
-				<UsualGroup name="ГруппаКодНаименование" id="23">
+				<UsualGroup name="ГруппаКоды" id="23">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа код наименование</v8:content>
+							<v8:content>Группа коды</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа код наименование</v8:content>
+							<v8:content>Группа коды</v8:content>
 						</v8:item>
 					</ToolTip>
-					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="24"/>
+					<ExtendedTooltip name="ГруппаКодыРасширеннаяПодсказка" id="24"/>
 					<ChildItems>
 						<InputField name="Код" id="1">
 							<DataPath>Объект.Code</DataPath>
@@ -45,14 +45,29 @@
 							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
 						</InputField>
-						<InputField name="Наименование" id="4">
-							<DataPath>Объект.Description</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						<InputField name="Идентификатор" id="32">
+							<DataPath>Объект.Идентификатор</DataPath>
+							<ContextMenu name="ИдентификаторКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="34"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Телефон" id="35">
+					<DataPath>Объект.Телефон</DataPath>
+					<ContextMenu name="ТелефонКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="Бот" id="29">
+					<DataPath>Объект.Бот</DataPath>
+					<ContextMenu name="БотКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="БотРасширеннаяПодсказка" id="31"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаТело" id="27">

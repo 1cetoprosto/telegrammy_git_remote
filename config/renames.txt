@@ -41,6 +41,7 @@ CommonModules\ОбработкаТабличныхЧастей.xml-->CommonModul
 CommonModules\ОбщегоНазначения.xml-->CommonModules\ОбщегоНазначения.xml
 CommonModules\ПолныеПрава.xml-->CommonModules\ПолныеПрава.xml
 CommonModules\ПрисоединенныеФайлы.xml-->CommonModules\ПрисоединенныеФайлы.xml
+CommonModules\Регистратура.xml-->CommonModules\Регистратура.xml
 CommonModules\СтроковыеФункцииКлиентСервер.xml-->CommonModules\СтроковыеФункцииКлиентСервер.xml
 CommonModules\Боты\Ext\Module.bsl-->CommonModules\Боты\Ext\Module.bsl
 CommonModules\ГлобальныйМодуль\Ext\Module.bsl-->CommonModules\ГлобальныйМодуль\Ext\Module.bsl
@@ -49,6 +50,7 @@ CommonModules\ОбработкаТабличныхЧастей\Ext\Module.bsl-->
 CommonModules\ОбщегоНазначения\Ext\Module.bsl-->CommonModules\ОбщегоНазначения\Ext\Module.bsl
 CommonModules\ПолныеПрава\Ext\Module.bsl-->CommonModules\ПолныеПрава\Ext\Module.bsl
 CommonModules\ПрисоединенныеФайлы\Ext\Module.bsl-->CommonModules\ПрисоединенныеФайлы\Ext\Module.bsl
+CommonModules\Регистратура\Ext\Module.bsl-->CommonModules\Регистратура\Ext\Module.bsl
 CommonModules\СтроковыеФункцииКлиентСервер\Ext\Module.bsl-->CommonModules\СтроковыеФункцииКлиентСервер\Ext\Module.bsl
 CommonPictures\Регистратура.xml-->CommonPictures\Регистратура.xml
 CommonPictures\Телеграм.xml-->CommonPictures\Телеграм.xml
@@ -91,6 +93,8 @@ Enums\ВидыМатериалов.xml-->Enums\ВидыМатериалов.xml
 Enums\ВидыРегулярныхСообщений.xml-->Enums\ВидыРегулярныхСообщений.xml
 Enums\ТипыЗаписейНаПрием.xml-->Enums\ТипыЗаписейНаПрием.xml
 Enums\ТипыОтветовТелеграм.xml-->Enums\ТипыОтветовТелеграм.xml
+EventSubscriptions\ПодпискаНаСобытие1.xml-->EventSubscriptions\ПодпискаНаСобытие1.xml
+EventSubscriptions\ПроведениеЗаписьНаПрием.xml-->EventSubscriptions\ПроведениеЗаписьНаПрием.xml
 Ext\ManagedApplicationModule.bsl-->Ext\ManagedApplicationModule.bsl
 Ext\Splash.xml-->Ext\Splash.xml
 Ext\Splash\Picture.png-->Ext\Splash\Picture.png
@@ -99,7 +103,6 @@ HTTPServices\Webhook\Ext\Module.bsl-->HTTPServices\Webhook\Ext\Module.bsl
 InformationRegisters\ВариантыОтветов.xml-->InformationRegisters\ВариантыОтветов.xml
 InformationRegisters\ЗаписиНаПрием.xml-->InformationRegisters\ЗаписиНаПрием.xml
 InformationRegisters\ЗапросыБоту.xml-->InformationRegisters\ЗапросыБоту.xml
-InformationRegisters\МастераБотов.xml-->InformationRegisters\МастераБотов.xml
 InformationRegisters\РабочиеДниМастеров.xml-->InformationRegisters\РабочиеДниМастеров.xml
 InformationRegisters\СессииБотов.xml-->InformationRegisters\СессииБотов.xml
 InformationRegisters\СессииКонтрагентов.xml-->InformationRegisters\СессииКонтрагентов.xml

@@ -24,7 +24,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаписьНаПрием</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыЗаписейНаПрием</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TestZakazUslugBot</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.МастераБотов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">92dd57f4-1f67-4436-be05-c90593bb2957</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗаписиНаПрием</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Регистратура</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РабочиеДниМастеров</xr:Item>
