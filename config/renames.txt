@@ -95,6 +95,7 @@ Enums\ТипыЗаписейНаПрием.xml-->Enums\ТипыЗаписейН�
 Enums\ТипыОтветовТелеграм.xml-->Enums\ТипыОтветовТелеграм.xml
 EventSubscriptions\ПодпискаНаСобытие1.xml-->EventSubscriptions\ПодпискаНаСобытие1.xml
 EventSubscriptions\ПроведениеЗаписьНаПрием.xml-->EventSubscriptions\ПроведениеЗаписьНаПрием.xml
+Ext\HomePageWorkArea.xml-->Ext\HomePageWorkArea.xml
 Ext\ManagedApplicationModule.bsl-->Ext\ManagedApplicationModule.bsl
 Ext\Splash.xml-->Ext\Splash.xml
 Ext\Splash\Picture.png-->Ext\Splash\Picture.png
