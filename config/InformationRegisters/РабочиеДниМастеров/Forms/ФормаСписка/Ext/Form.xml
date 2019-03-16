@@ -306,27 +306,27 @@
 					</SearchControlAddition>
 					<ChildItems>
 						<LabelField name="СписокЗаписейНаПриемДатаВремяЗаписи" id="128">
-							<DataPath>СписокЗаписейНаПрием.ДатаВремяЗаписи</DataPath>
+							<DataPath>~СписокЗаписейНаПрием.ДатаВремяЗаписи</DataPath>
 							<ContextMenu name="СписокЗаписейНаПриемДатаВремяЗаписиКонтекстноеМеню" id="129"/>
 							<ExtendedTooltip name="СписокЗаписейНаПриемДатаВремяЗаписиРасширеннаяПодсказка" id="130"/>
 						</LabelField>
 						<LabelField name="СписокЗаписейНаПриемКонтрагент" id="131">
-							<DataPath>СписокЗаписейНаПрием.Контрагент</DataPath>
+							<DataPath>~СписокЗаписейНаПрием.Контрагент</DataPath>
 							<ContextMenu name="СписокЗаписейНаПриемКонтрагентКонтекстноеМеню" id="132"/>
 							<ExtendedTooltip name="СписокЗаписейНаПриемКонтрагентРасширеннаяПодсказка" id="133"/>
 						</LabelField>
 						<LabelField name="СписокЗаписейНаПриемМастер" id="134">
-							<DataPath>СписокЗаписейНаПрием.Мастер</DataPath>
+							<DataPath>~СписокЗаписейНаПрием.Мастер</DataPath>
 							<ContextMenu name="СписокЗаписейНаПриемМастерКонтекстноеМеню" id="135"/>
 							<ExtendedTooltip name="СписокЗаписейНаПриемМастерРасширеннаяПодсказка" id="136"/>
 						</LabelField>
 						<LabelField name="СписокЗаписейНаПриемНомекнлатура" id="137">
-							<DataPath>СписокЗаписейНаПрием.Номекнлатура</DataPath>
+							<DataPath>~СписокЗаписейНаПрием.Номекнлатура</DataPath>
 							<ContextMenu name="СписокЗаписейНаПриемНомекнлатураКонтекстноеМеню" id="138"/>
 							<ExtendedTooltip name="СписокЗаписейНаПриемНомекнлатураРасширеннаяПодсказка" id="139"/>
 						</LabelField>
 						<LabelField name="СписокЗаписейНаПриемТипЗаписиНаПрием" id="140">
-							<DataPath>СписокЗаписейНаПрием.ТипЗаписиНаПрием</DataPath>
+							<DataPath>~СписокЗаписейНаПрием.ТипЗаписиНаПрием</DataPath>
 							<ContextMenu name="СписокЗаписейНаПриемТипЗаписиНаПриемКонтекстноеМеню" id="141"/>
 							<ExtendedTooltip name="СписокЗаписейНаПриемТипЗаписиНаПриемРасширеннаяПодсказка" id="142"/>
 						</LabelField>
@@ -632,8 +632,8 @@
 					<currentLevel xmlns="http://v8.1c.ru/8.2/data/chart">0</currentLevel>
 				</pl:timeScale>
 				<pl:period>
-					<pl:begin>2019-02-28T00:00:00</pl:begin>
-					<pl:end>2019-02-28T23:59:59</pl:end>
+					<pl:begin>2019-03-16T00:00:00</pl:begin>
+					<pl:end>2019-03-16T23:59:59</pl:end>
 				</pl:period>
 				<pl:displayCurrentDate>true</pl:displayCurrentDate>
 				<pl:itemsTimeRepresentation>BeginTime</pl:itemsTimeRepresentation>

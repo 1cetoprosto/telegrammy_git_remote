@@ -17,6 +17,7 @@ Catalogs\КомандыБота\Forms\ФормаСписка.xml-->Catalogs\Ко
 Catalogs\КомандыБота\Forms\ФормаЭлемента.xml-->Catalogs\КомандыБота\Forms\ФормаЭлемента.xml
 Catalogs\КомандыБота\Forms\ФормаСписка\Ext\Form.xml-->Catalogs\КомандыБота\Forms\ФормаСписка\Ext\Form.xml
 Catalogs\КомандыБота\Forms\ФормаЭлемента\Ext\Form.xml-->Catalogs\КомандыБота\Forms\ФормаЭлемента\Ext\Form.xml
+Catalogs\Контрагенты\Ext\ObjectModule.bsl-->Catalogs\Контрагенты\Ext\ObjectModule.bsl
 Catalogs\Мастера\Forms\ФормаВыбора.xml-->Catalogs\Мастера\Forms\ФормаВыбора.xml
 Catalogs\Мастера\Forms\ФормаСписка.xml-->Catalogs\Мастера\Forms\ФормаСписка.xml
 Catalogs\Мастера\Forms\ФормаЭлемента.xml-->Catalogs\Мастера\Forms\ФормаЭлемента.xml
