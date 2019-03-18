@@ -170,9 +170,13 @@
 			<ScheduledJob>ПостПланЧтения</ScheduledJob>
 			<ScheduledJob>ИнфоБот</ScheduledJob>
 			<ScheduledJob>УдалениеНеЗаконченныхЗаписей</ScheduledJob>
+			<ScheduledJob>ЧасовоеНапоминаниеОЗаписи</ScheduledJob>
+			<ScheduledJob>СуточноеНапоминаниеОЗаписи</ScheduledJob>
 			<CommonCommand>ВыполнитьЗадания</CommonCommand>
 			<CommonCommand>Объявления</CommonCommand>
 			<CommonCommand>УдалитьНеПроведенныеЗаписи</CommonCommand>
+			<CommonCommand>ЧасовоеНапоминаниеОЗаписи</CommonCommand>
+			<CommonCommand>СуточноеНапоминаниеОЗаписи</CommonCommand>
 			<Constant>ПользовательДляВыполненияРегламентныхЗаданийВФайловомВарианте</Constant>
 			<Constant>ИнтервалДляОпросаРегламентныхЗаданийВФайловомВарианте</Constant>
 			<Constant>КлючWebhook</Constant>
