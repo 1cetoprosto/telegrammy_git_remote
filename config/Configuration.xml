@@ -164,18 +164,20 @@
 			<CommonModule>Локализация</CommonModule>
 			<CommonModule>Регистратура</CommonModule>
 			<HTTPService>Webhook</HTTPService>
-			<EventSubscription>ПроведениеЗаписьНаПрием</EventSubscription>
-			<EventSubscription>ПодпискаНаСобытие1</EventSubscription>
 			<ScheduledJob>СборщикМусора</ScheduledJob>
 			<ScheduledJob>ПланЧтения</ScheduledJob>
 			<ScheduledJob>ПостБожьяБлагодать</ScheduledJob>
 			<ScheduledJob>ПостПланЧтения</ScheduledJob>
 			<ScheduledJob>ИнфоБот</ScheduledJob>
+			<ScheduledJob>УдалениеНеЗаконченныхЗаписей</ScheduledJob>
 			<CommonCommand>ВыполнитьЗадания</CommonCommand>
 			<CommonCommand>Объявления</CommonCommand>
+			<CommonCommand>УдалитьНеПроведенныеЗаписи</CommonCommand>
 			<Constant>ПользовательДляВыполненияРегламентныхЗаданийВФайловомВарианте</Constant>
 			<Constant>ИнтервалДляОпросаРегламентныхЗаданийВФайловомВарианте</Constant>
 			<Constant>КлючWebhook</Constant>
+			<Constant>ВремяУдаленияЗаписей</Constant>
+			<Constant>ВремяПредупрежденияОбУдаленииЗаписи</Constant>
 			<Catalog>Боты</Catalog>
 			<Catalog>КомандыБота</Catalog>
 			<Catalog>Контрагенты</Catalog>

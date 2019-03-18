@@ -33,8 +33,10 @@ Catalogs\РегулярныеСообщения\Forms\ФормаЭлемента
 Catalogs\РегулярныеСообщения\Forms\ФормаЭлемента\Ext\Form\Module.bsl-->Catalogs\РегулярныеСообщения\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 CommonCommands\ВыполнитьЗадания.xml-->CommonCommands\ВыполнитьЗадания.xml
 CommonCommands\Объявления.xml-->CommonCommands\Объявления.xml
+CommonCommands\УдалитьНеПроведенныеЗаписи.xml-->CommonCommands\УдалитьНеПроведенныеЗаписи.xml
 CommonCommands\ВыполнитьЗадания\Ext\CommandModule.bsl-->CommonCommands\ВыполнитьЗадания\Ext\CommandModule.bsl
 CommonCommands\Объявления\Ext\CommandModule.bsl-->CommonCommands\Объявления\Ext\CommandModule.bsl
+CommonCommands\УдалитьНеПроведенныеЗаписи\Ext\CommandModule.bsl-->CommonCommands\УдалитьНеПроведенныеЗаписи\Ext\CommandModule.bsl
 CommonModules\Боты.xml-->CommonModules\Боты.xml
 CommonModules\ГлобальныйМодуль.xml-->CommonModules\ГлобальныйМодуль.xml
 CommonModules\Локализация.xml-->CommonModules\Локализация.xml
@@ -59,6 +61,8 @@ CommonPictures\Регистратура\Ext\Picture.xml-->CommonPictures\Рег�
 CommonPictures\Регистратура\Ext\Picture\Picture.png-->CommonPictures\Регистратура\Ext\Picture\Picture.png
 CommonPictures\Телеграм\Ext\Picture.xml-->CommonPictures\Телеграм\Ext\Picture.xml
 CommonPictures\Телеграм\Ext\Picture\Picture.png-->CommonPictures\Телеграм\Ext\Picture\Picture.png
+Constants\ВремяПредупрежденияОбУдаленииЗаписи.xml-->Constants\ВремяПредупрежденияОбУдаленииЗаписи.xml
+Constants\ВремяУдаленияЗаписей.xml-->Constants\ВремяУдаленияЗаписей.xml
 Constants\ИнтервалДляОпросаРегламентныхЗаданийВФайловомВарианте.xml-->Constants\ИнтервалДляОпросаРегламентныхЗаданийВФайловомВарианте.xml
 Constants\КлючWebhook.xml-->Constants\КлючWebhook.xml
 Constants\ПользовательДляВыполненияРегламентныхЗаданийВФайловомВарианте.xml-->Constants\ПользовательДляВыполненияРегламентныхЗаданийВФайловомВарианте.xml
@@ -94,8 +98,6 @@ Enums\ВидыМатериалов.xml-->Enums\ВидыМатериалов.xml
 Enums\ВидыРегулярныхСообщений.xml-->Enums\ВидыРегулярныхСообщений.xml
 Enums\ТипыЗаписейНаПрием.xml-->Enums\ТипыЗаписейНаПрием.xml
 Enums\ТипыОтветовТелеграм.xml-->Enums\ТипыОтветовТелеграм.xml
-EventSubscriptions\ПодпискаНаСобытие1.xml-->EventSubscriptions\ПодпискаНаСобытие1.xml
-EventSubscriptions\ПроведениеЗаписьНаПрием.xml-->EventSubscriptions\ПроведениеЗаписьНаПрием.xml
 Ext\HomePageWorkArea.xml-->Ext\HomePageWorkArea.xml
 Ext\ManagedApplicationModule.bsl-->Ext\ManagedApplicationModule.bsl
 Ext\Splash.xml-->Ext\Splash.xml
@@ -133,11 +135,13 @@ ScheduledJobs\ПланЧтения.xml-->ScheduledJobs\ПланЧтения.xml
 ScheduledJobs\ПостБожьяБлагодать.xml-->ScheduledJobs\ПостБожьяБлагодать.xml
 ScheduledJobs\ПостПланЧтения.xml-->ScheduledJobs\ПостПланЧтения.xml
 ScheduledJobs\СборщикМусора.xml-->ScheduledJobs\СборщикМусора.xml
+ScheduledJobs\УдалениеНеЗаконченныхЗаписей.xml-->ScheduledJobs\УдалениеНеЗаконченныхЗаписей.xml
 ScheduledJobs\ИнфоБот\Ext\Schedule.xml-->ScheduledJobs\ИнфоБот\Ext\Schedule.xml
 ScheduledJobs\ПланЧтения\Ext\Schedule.xml-->ScheduledJobs\ПланЧтения\Ext\Schedule.xml
 ScheduledJobs\ПостБожьяБлагодать\Ext\Schedule.xml-->ScheduledJobs\ПостБожьяБлагодать\Ext\Schedule.xml
 ScheduledJobs\ПостПланЧтения\Ext\Schedule.xml-->ScheduledJobs\ПостПланЧтения\Ext\Schedule.xml
 ScheduledJobs\СборщикМусора\Ext\Schedule.xml-->ScheduledJobs\СборщикМусора\Ext\Schedule.xml
+ScheduledJobs\УдалениеНеЗаконченныхЗаписей\Ext\Schedule.xml-->ScheduledJobs\УдалениеНеЗаконченныхЗаписей\Ext\Schedule.xml
 SessionParameters\ТекущийПользователь.xml-->SessionParameters\ТекущийПользователь.xml
 StyleItems\ПоясняющийТекст.xml-->StyleItems\ПоясняющийТекст.xml
 Subsystems\БожьяБлагодать.xml-->Subsystems\БожьяБлагодать.xml
