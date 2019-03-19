@@ -189,7 +189,7 @@
 					<ExtendedTooltip name="first_nameРасширеннаяПодсказка" id="27"/>
 				</LabelField>
 				<LabelField name="Контрагент" id="22">
-					<DataPath>Список.Контрагент</DataPath>
+					<DataPath>~Список.Контрагент</DataPath>
 					<ContextMenu name="КонтрагентКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="24"/>
 				</LabelField>
