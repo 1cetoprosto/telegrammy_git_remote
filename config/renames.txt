@@ -34,11 +34,13 @@ Catalogs\РегулярныеСообщения\Forms\ФормаЭлемента
 CommonCommands\ВыполнитьЗадания.xml-->CommonCommands\ВыполнитьЗадания.xml
 CommonCommands\Объявления.xml-->CommonCommands\Объявления.xml
 CommonCommands\СуточноеНапоминаниеОЗаписи.xml-->CommonCommands\СуточноеНапоминаниеОЗаписи.xml
+CommonCommands\УдалитьНеЗаконченныхСессийКонтрагентов.xml-->CommonCommands\УдалитьНеЗаконченныхСессийКонтрагентов.xml
 CommonCommands\УдалитьНеПроведенныеЗаписи.xml-->CommonCommands\УдалитьНеПроведенныеЗаписи.xml
 CommonCommands\ЧасовоеНапоминаниеОЗаписи.xml-->CommonCommands\ЧасовоеНапоминаниеОЗаписи.xml
 CommonCommands\ВыполнитьЗадания\Ext\CommandModule.bsl-->CommonCommands\ВыполнитьЗадания\Ext\CommandModule.bsl
 CommonCommands\Объявления\Ext\CommandModule.bsl-->CommonCommands\Объявления\Ext\CommandModule.bsl
 CommonCommands\СуточноеНапоминаниеОЗаписи\Ext\CommandModule.bsl-->CommonCommands\СуточноеНапоминаниеОЗаписи\Ext\CommandModule.bsl
+CommonCommands\УдалитьНеЗаконченныхСессийКонтрагентов\Ext\CommandModule.bsl-->CommonCommands\УдалитьНеЗаконченныхСессийКонтрагентов\Ext\CommandModule.bsl
 CommonCommands\УдалитьНеПроведенныеЗаписи\Ext\CommandModule.bsl-->CommonCommands\УдалитьНеПроведенныеЗаписи\Ext\CommandModule.bsl
 CommonCommands\ЧасовоеНапоминаниеОЗаписи\Ext\CommandModule.bsl-->CommonCommands\ЧасовоеНапоминаниеОЗаписи\Ext\CommandModule.bsl
 CommonModules\Боты.xml-->CommonModules\Боты.xml
@@ -141,6 +143,7 @@ ScheduledJobs\ПостПланЧтения.xml-->ScheduledJobs\ПостПлан�
 ScheduledJobs\СборщикМусора.xml-->ScheduledJobs\СборщикМусора.xml
 ScheduledJobs\СуточноеНапоминаниеОЗаписи.xml-->ScheduledJobs\СуточноеНапоминаниеОЗаписи.xml
 ScheduledJobs\УдалениеНеЗаконченныхЗаписей.xml-->ScheduledJobs\УдалениеНеЗаконченныхЗаписей.xml
+ScheduledJobs\УдалениеНеЗаконченныхСессийКонтрагентов.xml-->ScheduledJobs\УдалениеНеЗаконченныхСессийКонтрагентов.xml
 ScheduledJobs\ЧасовоеНапоминаниеОЗаписи.xml-->ScheduledJobs\ЧасовоеНапоминаниеОЗаписи.xml
 ScheduledJobs\ИнфоБот\Ext\Schedule.xml-->ScheduledJobs\ИнфоБот\Ext\Schedule.xml
 ScheduledJobs\ПланЧтения\Ext\Schedule.xml-->ScheduledJobs\ПланЧтения\Ext\Schedule.xml
@@ -149,6 +152,7 @@ ScheduledJobs\ПостПланЧтения\Ext\Schedule.xml-->ScheduledJobs\По
 ScheduledJobs\СборщикМусора\Ext\Schedule.xml-->ScheduledJobs\СборщикМусора\Ext\Schedule.xml
 ScheduledJobs\СуточноеНапоминаниеОЗаписи\Ext\Schedule.xml-->ScheduledJobs\СуточноеНапоминаниеОЗаписи\Ext\Schedule.xml
 ScheduledJobs\УдалениеНеЗаконченныхЗаписей\Ext\Schedule.xml-->ScheduledJobs\УдалениеНеЗаконченныхЗаписей\Ext\Schedule.xml
+ScheduledJobs\УдалениеНеЗаконченныхСессийКонтрагентов\Ext\Schedule.xml-->ScheduledJobs\УдалениеНеЗаконченныхСессийКонтрагентов\Ext\Schedule.xml
 ScheduledJobs\ЧасовоеНапоминаниеОЗаписи\Ext\Schedule.xml-->ScheduledJobs\ЧасовоеНапоминаниеОЗаписи\Ext\Schedule.xml
 SessionParameters\ТекущийПользователь.xml-->SessionParameters\ТекущийПользователь.xml
 StyleItems\ПоясняющийТекст.xml-->StyleItems\ПоясняющийТекст.xml
