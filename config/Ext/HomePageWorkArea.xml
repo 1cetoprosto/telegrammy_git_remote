@@ -7,6 +7,14 @@
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Мастер">false</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>InformationRegister.РабочиеДниМастеров.Form.ФормаСписка</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Item>
 	</Column>

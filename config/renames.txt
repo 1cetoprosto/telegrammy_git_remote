@@ -24,6 +24,9 @@ Catalogs\Мастера\Forms\ФормаЭлемента.xml-->Catalogs\Маст
 Catalogs\Мастера\Forms\ФормаВыбора\Ext\Form.xml-->Catalogs\Мастера\Forms\ФормаВыбора\Ext\Form.xml
 Catalogs\Мастера\Forms\ФормаСписка\Ext\Form.xml-->Catalogs\Мастера\Forms\ФормаСписка\Ext\Form.xml
 Catalogs\Мастера\Forms\ФормаЭлемента\Ext\Form.xml-->Catalogs\Мастера\Forms\ФормаЭлемента\Ext\Form.xml
+Catalogs\Мастера\Forms\ФормаЭлемента\Ext\Form\Module.bsl-->Catalogs\Мастера\Forms\ФормаЭлемента\Ext\Form\Module.bsl
+Catalogs\НоменклатураМастеров\Forms\ФормаСписка.xml-->Catalogs\НоменклатураМастеров\Forms\ФормаСписка.xml
+Catalogs\НоменклатураМастеров\Forms\ФормаСписка\Ext\Form.xml-->Catalogs\НоменклатураМастеров\Forms\ФормаСписка\Ext\Form.xml
 Catalogs\РегулярныеСообщения\Ext\Help.xml-->Catalogs\РегулярныеСообщения\Ext\Help.xml
 Catalogs\РегулярныеСообщения\Ext\Help\ru.html-->Catalogs\РегулярныеСообщения\Ext\Help\ru.html
 Catalogs\РегулярныеСообщения\Forms\ФормаСписка.xml-->Catalogs\РегулярныеСообщения\Forms\ФормаСписка.xml
@@ -106,6 +109,7 @@ Enums\ТипыЗаписейНаПрием.xml-->Enums\ТипыЗаписейН�
 Enums\ТипыОтветовТелеграм.xml-->Enums\ТипыОтветовТелеграм.xml
 Ext\HomePageWorkArea.xml-->Ext\HomePageWorkArea.xml
 Ext\ManagedApplicationModule.bsl-->Ext\ManagedApplicationModule.bsl
+Ext\SessionModule.bsl-->Ext\SessionModule.bsl
 Ext\Splash.xml-->Ext\Splash.xml
 Ext\Splash\Picture.png-->Ext\Splash\Picture.png
 HTTPServices\Webhook.xml-->HTTPServices\Webhook.xml
@@ -135,7 +139,9 @@ InformationRegisters\РабочиеДниМастеров\Templates\Календ
 InformationRegisters\РабочиеДниМастеров\Templates\КалендарьОформление\Ext\Template.xml-->InformationRegisters\РабочиеДниМастеров\Templates\КалендарьОформление\Ext\Template.xml
 Languages\Русский.xml-->Languages\Русский.xml
 Roles\Администратор.xml-->Roles\Администратор.xml
+Roles\Мастер.xml-->Roles\Мастер.xml
 Roles\Администратор\Ext\Rights.xml-->Roles\Администратор\Ext\Rights.xml
+Roles\Мастер\Ext\Rights.xml-->Roles\Мастер\Ext\Rights.xml
 ScheduledJobs\ИнфоБот.xml-->ScheduledJobs\ИнфоБот.xml
 ScheduledJobs\ПланЧтения.xml-->ScheduledJobs\ПланЧтения.xml
 ScheduledJobs\ПостБожьяБлагодать.xml-->ScheduledJobs\ПостБожьяБлагодать.xml

@@ -154,6 +154,7 @@
 			<CommonPicture>Регистратура</CommonPicture>
 			<SessionParameter>ТекущийПользователь</SessionParameter>
 			<Role>Администратор</Role>
+			<Role>Мастер</Role>
 			<CommonModule>Боты</CommonModule>
 			<CommonModule>ПрисоединенныеФайлы</CommonModule>
 			<CommonModule>ОбщегоНазначения</CommonModule>

@@ -17,6 +17,19 @@
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
+		<LabelDecoration name="Декорация1" id="29">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;b&gt;Добавьте &lt;/&gt;время приема в рабочие дни.
+&lt;i&gt;Возможно автоматическое заполнение по шагу приема мастера&lt;/&gt;
+</v8:content>
+				</v8:item>
+			</Title>
+			<BackColor>style:ToolTipBackColor</BackColor>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="31"/>
+		</LabelDecoration>
 		<Table name="ВремяЗаписи" id="1">
 			<Representation>List</Representation>
 			<Header>false</Header>
