@@ -812,10 +812,6 @@
 			<value>false</value>
 		</right>
 		<right>
-			<name>ActiveUsers</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>EventLog</name>
 			<value>false</value>
 		</right>
