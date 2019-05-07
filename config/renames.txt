@@ -37,11 +37,13 @@ Catalogs\РегулярныеСообщения\Forms\ФормаЭлемента
 Catalogs\РегулярныеСообщения\Forms\ФормаЭлемента\Ext\Form\Module.bsl-->Catalogs\РегулярныеСообщения\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 CommonCommands\ВыполнитьЗадания.xml-->CommonCommands\ВыполнитьЗадания.xml
 CommonCommands\Объявления.xml-->CommonCommands\Объявления.xml
+CommonCommands\ОчисткаНапоминанийКонтрагентам.xml-->CommonCommands\ОчисткаНапоминанийКонтрагентам.xml
 CommonCommands\РассылкаНапоминанийКонтрагентам.xml-->CommonCommands\РассылкаНапоминанийКонтрагентам.xml
 CommonCommands\УдалитьНеЗаконченныхСессийКонтрагентов.xml-->CommonCommands\УдалитьНеЗаконченныхСессийКонтрагентов.xml
 CommonCommands\УдалитьНеПроведенныеЗаписи.xml-->CommonCommands\УдалитьНеПроведенныеЗаписи.xml
 CommonCommands\ВыполнитьЗадания\Ext\CommandModule.bsl-->CommonCommands\ВыполнитьЗадания\Ext\CommandModule.bsl
 CommonCommands\Объявления\Ext\CommandModule.bsl-->CommonCommands\Объявления\Ext\CommandModule.bsl
+CommonCommands\ОчисткаНапоминанийКонтрагентам\Ext\CommandModule.bsl-->CommonCommands\ОчисткаНапоминанийКонтрагентам\Ext\CommandModule.bsl
 CommonCommands\РассылкаНапоминанийКонтрагентам\Ext\CommandModule.bsl-->CommonCommands\РассылкаНапоминанийКонтрагентам\Ext\CommandModule.bsl
 CommonCommands\УдалитьНеЗаконченныхСессийКонтрагентов\Ext\CommandModule.bsl-->CommonCommands\УдалитьНеЗаконченныхСессийКонтрагентов\Ext\CommandModule.bsl
 CommonCommands\УдалитьНеПроведенныеЗаписи\Ext\CommandModule.bsl-->CommonCommands\УдалитьНеПроведенныеЗаписи\Ext\CommandModule.bsl
@@ -168,6 +170,7 @@ Roles\Мастер.xml-->Roles\Мастер.xml
 Roles\Администратор\Ext\Rights.xml-->Roles\Администратор\Ext\Rights.xml
 Roles\Мастер\Ext\Rights.xml-->Roles\Мастер\Ext\Rights.xml
 ScheduledJobs\ИнфоБот.xml-->ScheduledJobs\ИнфоБот.xml
+ScheduledJobs\ОчисткаНапоминанийКонтрагентам.xml-->ScheduledJobs\ОчисткаНапоминанийКонтрагентам.xml
 ScheduledJobs\ПланЧтения.xml-->ScheduledJobs\ПланЧтения.xml
 ScheduledJobs\ПостБожьяБлагодать.xml-->ScheduledJobs\ПостБожьяБлагодать.xml
 ScheduledJobs\ПостПланЧтения.xml-->ScheduledJobs\ПостПланЧтения.xml
@@ -178,6 +181,7 @@ ScheduledJobs\УдалениеНеЗаконченныхЗаписей.xml-->Sch
 ScheduledJobs\УдалениеНеЗаконченныхСессийКонтрагентов.xml-->ScheduledJobs\УдалениеНеЗаконченныхСессийКонтрагентов.xml
 ScheduledJobs\ЧасовоеНапоминаниеОЗаписи.xml-->ScheduledJobs\ЧасовоеНапоминаниеОЗаписи.xml
 ScheduledJobs\ИнфоБот\Ext\Schedule.xml-->ScheduledJobs\ИнфоБот\Ext\Schedule.xml
+ScheduledJobs\ОчисткаНапоминанийКонтрагентам\Ext\Schedule.xml-->ScheduledJobs\ОчисткаНапоминанийКонтрагентам\Ext\Schedule.xml
 ScheduledJobs\ПланЧтения\Ext\Schedule.xml-->ScheduledJobs\ПланЧтения\Ext\Schedule.xml
 ScheduledJobs\ПостБожьяБлагодать\Ext\Schedule.xml-->ScheduledJobs\ПостБожьяБлагодать\Ext\Schedule.xml
 ScheduledJobs\ПостПланЧтения\Ext\Schedule.xml-->ScheduledJobs\ПостПланЧтения\Ext\Schedule.xml

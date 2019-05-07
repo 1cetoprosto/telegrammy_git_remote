@@ -37,6 +37,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.СуточноеНапоминаниеОЗаписи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.УдалениеНеЗаконченныхСессийКонтрагентов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НапоминанияКонтрагента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОчисткаНапоминанийКонтрагентам</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

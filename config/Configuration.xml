@@ -176,11 +176,13 @@
 			<ScheduledJob>СуточноеНапоминаниеОЗаписи</ScheduledJob>
 			<ScheduledJob>УдалениеНеЗаконченныхСессийКонтрагентов</ScheduledJob>
 			<ScheduledJob>РассылкаНапоминанийКонтрагентам</ScheduledJob>
+			<ScheduledJob>ОчисткаНапоминанийКонтрагентам</ScheduledJob>
 			<CommonCommand>ВыполнитьЗадания</CommonCommand>
 			<CommonCommand>Объявления</CommonCommand>
 			<CommonCommand>УдалитьНеПроведенныеЗаписи</CommonCommand>
 			<CommonCommand>РассылкаНапоминанийКонтрагентам</CommonCommand>
 			<CommonCommand>УдалитьНеЗаконченныхСессийКонтрагентов</CommonCommand>
+			<CommonCommand>ОчисткаНапоминанийКонтрагентам</CommonCommand>
 			<Constant>ПользовательДляВыполненияРегламентныхЗаданийВФайловомВарианте</Constant>
 			<Constant>ИнтервалДляОпросаРегламентныхЗаданийВФайловомВарианте</Constant>
 			<Constant>КлючWebhook</Constant>
