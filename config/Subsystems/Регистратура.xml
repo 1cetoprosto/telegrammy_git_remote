@@ -30,13 +30,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ВремяУдаленияЗаписей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ВремяПредупрежденияОбУдаленииЗаписи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.УдалитьНеПроведенныеЗаписи</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ЧасовоеНапоминаниеОЗаписи</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СуточноеНапоминаниеОЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РассылкаНапоминанийКонтрагентам</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.УдалитьНеЗаконченныхСессийКонтрагентов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.УдалениеНеЗаконченныхЗаписей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЧасовоеНапоминаниеОЗаписи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.СуточноеНапоминаниеОЗаписи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.УдалениеНеЗаконченныхСессийКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НапоминанияКонтрагента</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

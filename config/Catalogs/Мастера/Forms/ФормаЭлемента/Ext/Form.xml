@@ -176,16 +176,54 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="22"/>
 					<ChildItems>
-						<InputField name="ВремяНапоминанияОЗаписиЧасовое" id="38">
-							<DataPath>Объект.ВремяНапоминанияОЗаписиЧасовое</DataPath>
-							<ContextMenu name="ВремяНапоминанияОЗаписиЧасовоеКонтекстноеМеню" id="39"/>
-							<ExtendedTooltip name="ВремяНапоминанияОЗаписиЧасовоеРасширеннаяПодсказка" id="40"/>
-						</InputField>
-						<InputField name="ВремяНапоминанияОЗаписиСуточное" id="41">
-							<DataPath>Объект.ВремяНапоминанияОЗаписиСуточное</DataPath>
-							<ContextMenu name="ВремяНапоминанияОЗаписиСуточноеКонтекстноеМеню" id="42"/>
-							<ExtendedTooltip name="ВремяНапоминанияОЗаписиСуточноеРасширеннаяПодсказка" id="43"/>
-						</InputField>
+						<Table name="ВремяНапоминанияОЗаписи" id="49">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ВремяНапоминанияОЗаписи</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ВремяНапоминанияОЗаписиКонтекстноеМеню" id="50"/>
+							<AutoCommandBar name="ВремяНапоминанияОЗаписиКоманднаяПанель" id="51"/>
+							<ExtendedTooltip name="ВремяНапоминанияОЗаписиРасширеннаяПодсказка" id="52"/>
+							<SearchStringAddition name="ВремяНапоминанияОЗаписиСтрокаПоиска" id="53">
+								<AdditionSource>
+									<Item>ВремяНапоминанияОЗаписи</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВремяНапоминанияОЗаписиСтрокаПоискаКонтекстноеМеню" id="54"/>
+								<ExtendedTooltip name="ВремяНапоминанияОЗаписиСтрокаПоискаРасширеннаяПодсказка" id="55"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВремяНапоминанияОЗаписиСостояниеПросмотра" id="56">
+								<AdditionSource>
+									<Item>ВремяНапоминанияОЗаписи</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВремяНапоминанияОЗаписиСостояниеПросмотраКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="ВремяНапоминанияОЗаписиСостояниеПросмотраРасширеннаяПодсказка" id="58"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВремяНапоминанияОЗаписиУправлениеПоиском" id="59">
+								<AdditionSource>
+									<Item>ВремяНапоминанияОЗаписи</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВремяНапоминанияОЗаписиУправлениеПоискомКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="ВремяНапоминанияОЗаписиУправлениеПоискомРасширеннаяПодсказка" id="61"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ВремяНапоминанияОЗаписиНомерСтроки" id="62">
+									<DataPath>Объект.ВремяНапоминанияОЗаписи.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВремяНапоминанияОЗаписиНомерСтрокиКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ВремяНапоминанияОЗаписиНомерСтрокиРасширеннаяПодсказка" id="64"/>
+								</LabelField>
+								<InputField name="ВремяНапоминанияОЗаписиМинДоЗаписи" id="65">
+									<DataPath>Объект.ВремяНапоминанияОЗаписи.МинДоЗаписи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВремяНапоминанияОЗаписиМинДоЗаписиКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ВремяНапоминанияОЗаписиМинДоЗаписиРасширеннаяПодсказка" id="67"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>

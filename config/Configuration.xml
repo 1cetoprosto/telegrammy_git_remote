@@ -164,6 +164,7 @@
 			<CommonModule>ОбработкаТабличныхЧастей</CommonModule>
 			<CommonModule>Локализация</CommonModule>
 			<CommonModule>Регистратура</CommonModule>
+			<CommonModule>ИнкубаторБотовСервер</CommonModule>
 			<HTTPService>Webhook</HTTPService>
 			<ScheduledJob>СборщикМусора</ScheduledJob>
 			<ScheduledJob>ПланЧтения</ScheduledJob>
@@ -174,11 +175,11 @@
 			<ScheduledJob>ЧасовоеНапоминаниеОЗаписи</ScheduledJob>
 			<ScheduledJob>СуточноеНапоминаниеОЗаписи</ScheduledJob>
 			<ScheduledJob>УдалениеНеЗаконченныхСессийКонтрагентов</ScheduledJob>
+			<ScheduledJob>РассылкаНапоминанийКонтрагентам</ScheduledJob>
 			<CommonCommand>ВыполнитьЗадания</CommonCommand>
 			<CommonCommand>Объявления</CommonCommand>
 			<CommonCommand>УдалитьНеПроведенныеЗаписи</CommonCommand>
-			<CommonCommand>ЧасовоеНапоминаниеОЗаписи</CommonCommand>
-			<CommonCommand>СуточноеНапоминаниеОЗаписи</CommonCommand>
+			<CommonCommand>РассылкаНапоминанийКонтрагентам</CommonCommand>
 			<CommonCommand>УдалитьНеЗаконченныхСессийКонтрагентов</CommonCommand>
 			<Constant>ПользовательДляВыполненияРегламентныхЗаданийВФайловомВарианте</Constant>
 			<Constant>ИнтервалДляОпросаРегламентныхЗаданийВФайловомВарианте</Constant>
@@ -208,6 +209,7 @@
 			<InformationRegister>ЗаписиНаПрием</InformationRegister>
 			<InformationRegister>РабочиеДниМастеров</InformationRegister>
 			<InformationRegister>ВариантыОтветов</InformationRegister>
+			<InformationRegister>НапоминанияКонтрагента</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

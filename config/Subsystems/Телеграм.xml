@@ -46,6 +46,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СессииКонтрагентов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Телеграм</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВариантыОтветов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">19af8258-640c-41db-be4b-c4afebd63239</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
