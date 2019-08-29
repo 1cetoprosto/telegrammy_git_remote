@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 		<ChildItems>
@@ -22,18 +22,6 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<LabelDecoration name="Декорация1" id="104">
-			<Title formatted="true">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>1. Для установки &lt;b&gt;выходных дней&lt;/&gt;, выбирите их в календаре зажав &lt;b&gt;Ctrl &lt;/&gt;и нажмите кнопку &lt;b&gt;"&lt;/&gt;&lt;b&gt;Выходной&lt;/&gt;&lt;b&gt;"&lt;/&gt;.
-2. Для установки &lt;b&gt;рабочих дней&lt;/&gt;, выбирите их в календаре зажав &lt;b&gt;Ctrl &lt;/&gt;и нажмите кнопку &lt;b&gt;"&lt;/&gt;&lt;b&gt;Рабочий&lt;/&gt;&lt;b&gt;"&lt;/&gt;.</v8:content>
-				</v8:item>
-			</Title>
-			<BackColor>style:ToolTipBackColor</BackColor>
-			<ContextMenu name="Декорация1КонтекстноеМеню" id="105"/>
-			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="106"/>
-		</LabelDecoration>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
 				<v8:item>
@@ -47,12 +35,60 @@
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>
 		<UsualGroup name="ГруппаДатаКалендаряПолеДаты" id="69">
-			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДатаКалендаряПолеДатыExtendedTooltip" id="70"/>
 			<ChildItems>
-				<UsualGroup name="ГруппаКалендарь" id="102">
+				<UsualGroup name="ГруппаЗапись" id="166" DisplayImportance="High">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа запись</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа запись</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗаписьРасширеннаяПодсказка" id="167"/>
+					<ChildItems>
+						<Button name="ДобавитьЗапись" id="168">
+							<Type>UsualButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<DefaultItem>true</DefaultItem>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ДобавитьЗапись</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Добавить запись</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ДобавитьЗаписьРасширеннаяПодсказка" id="169"/>
+						</Button>
+						<Button name="ВходящийЗвонок" id="162">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВходящийЗвонок</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Звонок</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ВходящийЗвонокРасширеннаяПодсказка" id="163"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКалендарь" id="102" DisplayImportance="High">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -65,11 +101,81 @@
 							<v8:content>Выбирите один или несколько дней</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+					<ToolTipRepresentation>Balloon</ToolTipRepresentation>
 					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<CollapsedRepresentationTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Календарь</v8:content>
+						</v8:item>
+					</CollapsedRepresentationTitle>
+					<Collapsed>true</Collapsed>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКалендарьРасширеннаяПодсказка" id="103"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаДни" id="113">
+						<UsualGroup name="ГруппаПодсказка" id="164">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подсказка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подсказка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подсказка</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<Collapsed>true</Collapsed>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<ShowLeftMargin>false</ShowLeftMargin>
+							<ExtendedTooltip name="ГруппаПодсказкаРасширеннаяПодсказка" id="165"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияИнструкция" id="104">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>1. Для установки &lt;b&gt;выходных дней&lt;/&gt;, выбирите их в календаре зажав &lt;b&gt;Ctrl &lt;/&gt;и нажмите кнопку &lt;b&gt;"&lt;/&gt;&lt;b&gt;Выходной&lt;/&gt;&lt;b&gt;"&lt;/&gt;.
+2. Для установки &lt;b&gt;рабочих дней&lt;/&gt;, выбирите их в календаре зажав &lt;b&gt;Ctrl &lt;/&gt;и нажмите кнопку &lt;b&gt;"&lt;/&gt;&lt;b&gt;Рабочий&lt;/&gt;&lt;b&gt;"&lt;/&gt;.</v8:content>
+										</v8:item>
+									</Title>
+									<BackColor>style:ToolTipBackColor</BackColor>
+									<ContextMenu name="ДекорацияИнструкцияКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ДекорацияИнструкцияРасширеннаяПодсказка" id="106"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<CalendarField name="ДатаКалендаря" id="71">
+							<DataPath>ДатаКалендаря</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>1</MaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>1</MaxHeight>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<SelectionMode>Multiple</SelectionMode>
+							<ContextMenu name="ДатаКалендаряКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="ДатаКалендаряExtendedTooltip" id="73"/>
+							<Events>
+								<Event name="OnChange">ДатаКалендаряПриИзменении</Event>
+								<Event name="OnPeriodOutput">ДатаКалендаряПриВыводеПериода</Event>
+							</Events>
+						</CalendarField>
+						<UsualGroup name="ГруппаДни" id="113" DisplayImportance="High">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -132,45 +238,25 @@
 								</Button>
 							</ChildItems>
 						</UsualGroup>
-						<CalendarField name="ДатаКалендаря" id="71">
-							<DataPath>ДатаКалендаря</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
-							<GroupVerticalAlign>Top</GroupVerticalAlign>
-							<Width>1</Width>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<MaxWidth>1</MaxWidth>
-							<Height>1</Height>
-							<AutoMaxHeight>false</AutoMaxHeight>
-							<MaxHeight>1</MaxHeight>
-							<HorizontalStretch>false</HorizontalStretch>
-							<VerticalStretch>false</VerticalStretch>
-							<SelectionMode>Multiple</SelectionMode>
-							<ContextMenu name="ДатаКалендаряКонтекстноеМеню" id="72"/>
-							<ExtendedTooltip name="ДатаКалендаряExtendedTooltip" id="73"/>
-							<Events>
-								<Event name="OnChange">ДатаКалендаряПриИзменении</Event>
-								<Event name="OnPeriodOutput">ДатаКалендаряПриВыводеПериода</Event>
-							</Events>
-						</CalendarField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаСправа" id="156">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа справа</v8:content>
+							<v8:content>Записи клиентов</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<Group>Vertical</Group>
+					<CollapsedRepresentationTitle>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа справа</v8:content>
+							<v8:content>Записи клиентов</v8:content>
 						</v8:item>
-					</ToolTip>
-					<Group>Vertical</Group>
+					</CollapsedRepresentationTitle>
+					<Collapsed>true</Collapsed>
 					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаСправаРасширеннаяПодсказка" id="157"/>
 					<ChildItems>
 						<UsualGroup name="ПанельНастроек" id="154">
@@ -276,6 +362,7 @@
 					<CommandBarLocation>None</CommandBarLocation>
 					<UseAlternationRowColor>true</UseAlternationRowColor>
 					<EnableStartDrag>true</EnableStartDrag>
+					<FileDragMode>AsFile</FileDragMode>
 					<DataPath>СписокЗаписейНаПрием</DataPath>
 					<RowPictureDataPath>СписокЗаписейНаПрием.DefaultPicture</RowPictureDataPath>
 					<AutoRefresh>false</AutoRefresh>
@@ -354,10 +441,10 @@
 				<Table name="Список" id="3">
 					<Representation>List</Representation>
 					<CommandBarLocation>None</CommandBarLocation>
-					<DefaultItem>true</DefaultItem>
 					<UseAlternationRowColor>true</UseAlternationRowColor>
 					<InitialTreeView>ExpandTopLevel</InitialTreeView>
 					<EnableStartDrag>true</EnableStartDrag>
+					<FileDragMode>AsFile</FileDragMode>
 					<DataPath>Список</DataPath>
 					<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 					<AutoRefresh>true</AutoRefresh>
@@ -646,8 +733,8 @@
 					<currentLevel xmlns="http://v8.1c.ru/8.2/data/chart">0</currentLevel>
 				</pl:timeScale>
 				<pl:period>
-					<pl:begin>2019-05-07T00:00:00</pl:begin>
-					<pl:end>2019-05-07T23:59:59</pl:end>
+					<pl:begin>2019-08-29T00:00:00</pl:begin>
+					<pl:end>2019-08-29T23:59:59</pl:end>
 				</pl:period>
 				<pl:displayCurrentDate>true</pl:displayCurrentDate>
 				<pl:itemsTimeRepresentation>BeginTime</pl:itemsTimeRepresentation>
@@ -709,6 +796,56 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.НоменклатураМастеров</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаКонтрагентов" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица контрагентов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Контрагент" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Телефон" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Телефон</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>13</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Контрагент" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -775,6 +912,40 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НастройкиМастера</Action>
+		</Command>
+		<Command name="ВходящийЗвонок" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Входящий звонок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Входящий звонок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВходящийЗвонок</Action>
+		</Command>
+		<Command name="ДобавитьЗапись" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить запись</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить запись</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьЗапись</Action>
 		</Command>
 	</Commands>
 </Form>

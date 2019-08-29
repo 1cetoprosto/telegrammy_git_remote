@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Контрагент" id="7">
+			<DataPath>Объект.Контрагент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ИДКонтрагента" id="10">
+			<DataPath>Объект.ИДКонтрагента</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИДКонтрагентаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ИДКонтрагентаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Table name="ВремяЗаписи" id="13">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ВремяЗаписи</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВремяЗаписиКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="ВремяЗаписиКоманднаяПанель" id="15">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ВремяЗаписиДобавитьЗапись" id="47">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьЗапись</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Добавить</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ВремяЗаписиДобавитьЗаписьРасширеннаяПодсказка" id="48"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ВремяЗаписиРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="ВремяЗаписиСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>ВремяЗаписи</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВремяЗаписиСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ВремяЗаписиСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВремяЗаписиСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>ВремяЗаписи</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВремяЗаписиСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ВремяЗаписиСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВремяЗаписиУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>ВремяЗаписи</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВремяЗаписиУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ВремяЗаписиУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ВремяЗаписиНомерСтроки" id="26">
+					<DataPath>Объект.ВремяЗаписи.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВремяЗаписиНомерСтрокиКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ВремяЗаписиНомерСтрокиРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<InputField name="ВремяЗаписиМастер" id="29">
+					<DataPath>Объект.ВремяЗаписи.Мастер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВремяЗаписиМастерКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ВремяЗаписиМастерРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ВремяЗаписиНоменклатура" id="32">
+					<DataPath>Объект.ВремяЗаписи.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВремяЗаписиНоменклатураКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ВремяЗаписиНоменклатураРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ВремяЗаписиДатаВремяЗаписи" id="35">
+					<DataPath>Объект.ВремяЗаписи.ДатаВремяЗаписи</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВремяЗаписиДатаВремяЗаписиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ВремяЗаписиДатаВремяЗаписиРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ВремяЗаписиТипЗаписиНаПрием" id="38">
+					<DataPath>Объект.ВремяЗаписи.ТипЗаписиНаПрием</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВремяЗаписиТипЗаписиНаПриемКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ВремяЗаписиТипЗаписиНаПриемРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ВремяЗаписиДлительность" id="41">
+					<DataPath>Объект.ВремяЗаписи.Длительность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВремяЗаписиДлительностьКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ВремяЗаписиДлительностьРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ВремяЗаписиЦена" id="44">
+					<DataPath>Объект.ВремяЗаписи.Цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВремяЗаписиЦенаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ВремяЗаписиЦенаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ЗаписьНаПрием</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьЗапись" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить запись</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить запись</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьЗапись</Action>
+		</Command>
+	</Commands>
+</Form>

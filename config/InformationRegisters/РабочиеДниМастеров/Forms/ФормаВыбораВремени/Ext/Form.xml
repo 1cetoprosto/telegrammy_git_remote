@@ -1,11 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Часы приема(записи)</v8:content>
+		</v8:item>
+	</Title>
 	<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<ShowTitle>false</ShowTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ВыбратьИЗакрыть" id="21">
 				<Type>CommandBarButton</Type>
-				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.ВыбратьИЗакрыть</CommandName>
 				<ExtendedTooltip name="ВыбратьИЗакрытьРасширеннаяПодсказка" id="22"/>
 			</Button>
@@ -21,9 +28,9 @@
 			<Title formatted="true">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>&lt;b&gt;Добавьте &lt;/&gt;время приема в рабочие дни.
-&lt;i&gt;Возможно автоматическое заполнение по шагу приема мастера&lt;/&gt;
-</v8:content>
+					<v8:content>&lt;fontsize 10&gt;&lt;b&gt;Укажите часы, на которые можно записаться на протяжении рабочего дня&lt;/&gt;&lt;/&gt;&lt;fontsize 14&gt;&lt;b&gt;
+&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;b&gt;+&lt;/&gt;&lt;/&gt; (добавить&lt;b&gt; &lt;/&gt;время приема)
+&lt;b&gt;Заполнить&lt;/&gt; (автоматически заполнить по шагу приема мастера)</v8:content>
 				</v8:item>
 			</Title>
 			<BackColor>style:ToolTipBackColor</BackColor>
@@ -36,6 +43,7 @@
 			<HorizontalLines>false</HorizontalLines>
 			<VerticalLines>false</VerticalLines>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>ВремяЗаписи</DataPath>
 			<RowPictureDataPath>ВремяЗаписи.Picture</RowPictureDataPath>
 			<ContextMenu name="ВремяЗаписиКонтекстноеМеню" id="2"/>
@@ -44,7 +52,12 @@
 				<ChildItems>
 					<Button name="ВремяЗаписиКнопкаДобавить" id="23">
 						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
 						<CommandName>Form.Item.ВремяЗаписи.StandardCommand.Add</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
 						<ExtendedTooltip name="ВремяЗаписиКнопкаДобавитьРасширеннаяПодсказка" id="24"/>
 					</Button>
 					<Button name="ВремяЗаписиКнопкаСкопировать" id="25">
@@ -54,7 +67,14 @@
 					</Button>
 					<Button name="ВремяЗаписиЗаполнитьПоШагуМастера" id="27">
 						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
 						<CommandName>Form.Command.ЗаполнитьПоШагуМастера</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заполнить</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="ВремяЗаписиЗаполнитьПоШагуМастераРасширеннаяПодсказка" id="28"/>
 					</Button>
 				</ChildItems>

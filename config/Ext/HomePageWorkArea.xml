@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<HomePageWorkArea xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+<HomePageWorkArea xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
 	<WorkingAreaTemplate>OneColumn</WorkingAreaTemplate>
 	<Column>
+		<Item>
+			<Form>DataProcessor.БыстрыеДействия.Form.БыстрыеДействия</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Item>
 		<Item>
 			<Form>InformationRegister.ЗапросыБоту.Form.ФормаСписка</Form>
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>
 				<xr:Value name="Role.Мастер">false</xr:Value>
-			</Visibility>
-		</Item>
-		<Item>
-			<Form>InformationRegister.РабочиеДниМастеров.Form.ФормаСписка</Form>
-			<Height>10</Height>
-			<Visibility>
-				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Item>
 	</Column>
