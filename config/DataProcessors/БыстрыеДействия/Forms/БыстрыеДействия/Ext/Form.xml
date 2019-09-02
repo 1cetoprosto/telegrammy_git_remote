@@ -44,7 +44,6 @@
 			<VerticalStretch>true</VerticalStretch>
 			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 			<GroupVerticalAlign>Center</GroupVerticalAlign>
-			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаБыстрыеДействияРасширеннаяПодсказка" id="2"/>

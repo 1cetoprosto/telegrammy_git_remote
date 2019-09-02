@@ -81,7 +81,7 @@ CommonPictures\Телеграм.xml-->CommonPictures\Телеграм.xml
 CommonPictures\БыстроеДействиеЗаписатьРабочиеДниМастеров\Ext\Picture.xml-->CommonPictures\БыстроеДействиеЗаписатьРабочиеДниМастеров\Ext\Picture.xml
 CommonPictures\БыстроеДействиеЗаписатьРабочиеДниМастеров\Ext\Picture\Picture.png-->CommonPictures\БыстроеДействиеЗаписатьРабочиеДниМастеров\Ext\Picture\Picture.png
 CommonPictures\БыстроеДействиеОткрытьНастройкиПрограммы\Ext\Picture.xml-->CommonPictures\БыстроеДействиеОткрытьНастройкиПрограммы\Ext\Picture.xml
-CommonPictures\БыстроеДействиеОткрытьНастройкиПрограммы\Ext\Picture\Picture.png-->CommonPictures\БыстроеДействиеОткрытьНастройкиПрограммы\Ext\Picture\Picture.png
+CommonPictures\БыстроеДействиеОткрытьНастройкиПрограммы\Ext\Picture\Picture.zip-->CommonPictures\БыстроеДействиеОткрытьНастройкиПрограммы\Ext\Picture\Picture.zip
 CommonPictures\БыстроеДействиеОткрытьНоменклатуру\Ext\Picture.xml-->CommonPictures\БыстроеДействиеОткрытьНоменклатуру\Ext\Picture.xml
 CommonPictures\БыстроеДействиеОткрытьНоменклатуру\Ext\Picture\Picture.jpg-->CommonPictures\БыстроеДействиеОткрытьНоменклатуру\Ext\Picture\Picture.jpg
 CommonPictures\БыстроеДействиеСоздатьЗаписьНаПрием\Ext\Picture.xml-->CommonPictures\БыстроеДействиеСоздатьЗаписьНаПрием\Ext\Picture.xml
