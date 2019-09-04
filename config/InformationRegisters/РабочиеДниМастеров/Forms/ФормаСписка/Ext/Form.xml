@@ -244,7 +244,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Записи клиентов</v8:content>
+							<v8:content>Просмотреть записи клиентов</v8:content>
 						</v8:item>
 					</Title>
 					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
@@ -331,6 +331,7 @@
 						</UsualGroup>
 						<PlannerField name="Планировщик" id="148">
 							<DataPath>Планировщик</DataPath>
+							<Enabled>false</Enabled>
 							<TitleLocation>None</TitleLocation>
 							<ContextMenu name="ПланировщикКонтекстноеМеню" id="149"/>
 							<ExtendedTooltip name="ПланировщикРасширеннаяПодсказка" id="150"/>
@@ -733,8 +734,8 @@
 					<currentLevel xmlns="http://v8.1c.ru/8.2/data/chart">0</currentLevel>
 				</pl:timeScale>
 				<pl:period>
-					<pl:begin>2019-09-03T00:00:00</pl:begin>
-					<pl:end>2019-09-03T23:59:59</pl:end>
+					<pl:begin>2019-09-04T00:00:00</pl:begin>
+					<pl:end>2019-09-04T23:59:59</pl:end>
 				</pl:period>
 				<pl:displayCurrentDate>true</pl:displayCurrentDate>
 				<pl:itemsTimeRepresentation>BeginTime</pl:itemsTimeRepresentation>
