@@ -121,31 +121,13 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа лево</v8:content>
+							<v8:content>Время приемов</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа лево</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Group>Vertical</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="20"/>
 					<ChildItems>
-						<InputField name="ВремяПервогоПриема" id="16">
-							<DataPath>Объект.ВремяПервогоПриема</DataPath>
-							<ContextMenu name="ВремяПервогоПриемаКонтекстноеМеню" id="17"/>
-							<ExtendedTooltip name="ВремяПервогоПриемаРасширеннаяПодсказка" id="18"/>
-						</InputField>
-						<InputField name="ВремяПоследнегоПриема" id="13">
-							<DataPath>Объект.ВремяПоследнегоПриема</DataPath>
-							<ContextMenu name="ВремяПоследнегоПриемаКонтекстноеМеню" id="14"/>
-							<ExtendedTooltip name="ВремяПоследнегоПриемаРасширеннаяПодсказка" id="15"/>
-						</InputField>
-						<InputField name="ШагЗаписи" id="10">
+						<InputField name="ШагЗаписи" id="90">
 							<DataPath>Объект.ШагЗаписи</DataPath>
 							<Title>
 								<v8:item>
@@ -153,15 +135,68 @@
 									<v8:content>Шаг записи, мин.</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
+							<ContextMenu name="ШагЗаписиКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="ШагЗаписиРасширеннаяПодсказка" id="92"/>
+						</InputField>
+						<Table name="ВремяПриемов" id="71">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ВремяПриемов</DataPath>
+							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Время в минутах между записями</v8:content>
+									<v8:content>Время приемов</v8:content>
 								</v8:item>
-							</ToolTip>
-							<ContextMenu name="ШагЗаписиКонтекстноеМеню" id="11"/>
-							<ExtendedTooltip name="ШагЗаписиРасширеннаяПодсказка" id="12"/>
-						</InputField>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Час прийомів</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ВремяПриемовКонтекстноеМеню" id="72"/>
+							<AutoCommandBar name="ВремяПриемовКоманднаяПанель" id="73"/>
+							<ExtendedTooltip name="ВремяПриемовРасширеннаяПодсказка" id="74"/>
+							<SearchStringAddition name="ВремяПриемовСтрокаПоиска" id="75">
+								<AdditionSource>
+									<Item>ВремяПриемов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВремяПриемовСтрокаПоискаКонтекстноеМеню" id="76"/>
+								<ExtendedTooltip name="ВремяПриемовСтрокаПоискаРасширеннаяПодсказка" id="77"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВремяПриемовСостояниеПросмотра" id="78">
+								<AdditionSource>
+									<Item>ВремяПриемов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВремяПриемовСостояниеПросмотраКонтекстноеМеню" id="79"/>
+								<ExtendedTooltip name="ВремяПриемовСостояниеПросмотраРасширеннаяПодсказка" id="80"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВремяПриемовУправлениеПоиском" id="81">
+								<AdditionSource>
+									<Item>ВремяПриемов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВремяПриемовУправлениеПоискомКонтекстноеМеню" id="82"/>
+								<ExtendedTooltip name="ВремяПриемовУправлениеПоискомРасширеннаяПодсказка" id="83"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ВремяПриемовНомерСтроки" id="84">
+									<DataPath>Объект.ВремяПриемов.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВремяПриемовНомерСтрокиКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ВремяПриемовНомерСтрокиРасширеннаяПодсказка" id="86"/>
+								</LabelField>
+								<InputField name="ВремяПриемовВремяПриема" id="87">
+									<DataPath>Объект.ВремяПриемов.ВремяПриема</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВремяПриемовВремяПриемаКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ВремяПриемовВремяПриемаРасширеннаяПодсказка" id="89"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаПраво" id="21">
@@ -201,9 +236,17 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Время напоминания о записи</v8:content>
+									<v8:content>Время напоминания о записи, мин</v8:content>
 								</v8:item>
 							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>За сколько минут до записи напоминать клиенту:
+60 мин. - 1 час
+1440 мин. - 1 сутка</v8:content>
+								</v8:item>
+							</ToolTip>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ВремяНапоминанияОЗаписиКонтекстноеМеню" id="50"/>
 							<AutoCommandBar name="ВремяНапоминанияОЗаписиКоманднаяПанель" id="51"/>
